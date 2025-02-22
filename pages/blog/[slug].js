@@ -5,11 +5,10 @@ import { useRouter } from 'next/router';
 // This would eventually come from your data source
 const posts = {
   'first-post': {
-    title: 'On Biological Interventions and Epistemic Enhancement',
+    title: 'A model of fasting',
     date: 'February 22, 2025',
     content: `
-      Initial explorations into the intersection of cognitive enhancement and forecasting accuracy.
-      How might we systematically improve our epistemic capabilities through biological interventions?
+      contentcontent
 
       This is where your full blog post content would go. You can include multiple paragraphs,
       links, and other content.
