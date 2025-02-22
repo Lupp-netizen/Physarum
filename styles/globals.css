@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #fbf8f3;
+  font-family: "Crimson Text", Georgia, serif;
+}
+
+.vintage-border {
+  border-image: linear-gradient(to right, rgba(173, 151, 120, 0.2), rgba(173, 151, 120, 0.5), rgba(173, 151, 120, 0.2)) 1;
+}
+
+.vintage-text {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05);
+}
