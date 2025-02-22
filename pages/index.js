@@ -8,7 +8,7 @@ const HomePage = () => {
       <div 
         className="fixed inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('/physarum.png')`,
+          backgroundImage: `url('/physarum2.png')`,
           opacity: '0.15'  // adjust this value between 0 and 1 to make it more/less visible
         }}
       />
