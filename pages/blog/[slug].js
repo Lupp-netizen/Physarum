@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 // This would eventually come from your data source
 const posts = {
   'first-post': {
-    title: 'bloggogog',
+    title: 'bloggogogo',
     date: 'February 22, 2025',
     content: `
       haha
