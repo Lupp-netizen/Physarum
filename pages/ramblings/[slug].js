@@ -5,14 +5,10 @@ import { useRouter } from 'next/router';
 // This would eventually come from your data source
 const posts = {
   'patterns-of-growth': {
-    title: 'Patterns of Growth and Decay',
+    title: 'rambleramble',
     date: 'January 15, 2025',
     content: `
-      Notes on biological and intellectual growth patterns, emergent behaviors, 
-      and the strange parallels between slime molds and human cognition.
-
-      This is where your full rambling content would go. You can include multiple paragraphs,
-      stream of consciousness thoughts, and other experimental content.
+     ahaha
     `
   },
   // Add more posts here
