@@ -20,7 +20,7 @@ const BlogPage = () => {
             </Link>
             <h1 className="text-4xl font-light text-stone-800 mt-8 mb-4">Blog</h1>
             <p className="text-lg text-stone-600 font-light">
-              Recent thoughts and explorations
+              mok
             </p>
           </div>
         </header>
@@ -34,11 +34,10 @@ const BlogPage = () => {
               </h2>
               <div className="text-sm text-stone-500 mb-4">February 22, 2025</div>
               <p className="text-stone-700 leading-relaxed">
-                Initial explorations into the intersection of cognitive enhancement and forecasting accuracy. 
-                How might we systematically improve our epistemic capabilities through biological interventions?
+                mokvak
               </p>
               <div className="mt-4">
-                <Link href="/blog/biological-interventions">
+                <Link href="/blog/mokvak">
                   <a className="text-stone-600 hover:text-stone-800 transition-colors">
                     Read more →
                   </a>
