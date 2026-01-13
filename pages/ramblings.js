@@ -30,7 +30,7 @@ const RamblingsPage = () => {
             {/* Example rambling posts */}
             <article className="prose">
               <h2 className="text-2xl font-light text-stone-800 mb-4">
-                Patterns of Growth and Decay
+                Help help wubaduba dub dub i need help
               </h2>
               <div className="text-sm text-stone-500 mb-4">January 15, 2025</div>
               <p className="text-stone-700 leading-relaxed">
