@@ -30,7 +30,7 @@ const BlogPage = () => {
             {/* Sample blog posts - you can edit these */}
             <article className="prose">
               <h2 className="text-2xl font-light text-stone-800 mb-4">
-                On Biological Interventions and Epistemic Enhancement
+                hah
               </h2>
               <div className="text-sm text-stone-500 mb-4">February 22, 2025</div>
               <p className="text-stone-700 leading-relaxed">
