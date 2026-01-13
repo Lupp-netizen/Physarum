@@ -20,7 +20,7 @@ const RamblingsPage = () => {
             </Link>
             <h1 className="text-4xl font-light text-stone-800 mt-8 mb-4">Ramblings</h1>
             <p className="text-lg text-stone-600 font-light">
-              Strange texts, philosophical wanderings, and unfinished thoughts
+              uuuu
             </p>
           </div>
         </header>
@@ -34,8 +34,7 @@ const RamblingsPage = () => {
               </h2>
               <div className="text-sm text-stone-500 mb-4">January 15, 2025</div>
               <p className="text-stone-700 leading-relaxed">
-                Notes on biological and intellectual growth patterns, emergent behaviors, 
-                and the strange parallels between slime molds and human cognition.
+                gwuk
               </p>
               <div className="mt-4">
                 <Link href="/ramblings/patterns-of-growth">
