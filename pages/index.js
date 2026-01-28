@@ -1,117 +1,128 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
+import { useTheme } from './_app';
 
-// CCRU-style Numogram SVG component
-const Numogram = ({ className }) => (
-  <svg
-    viewBox="0 0 200 200"
-    className={className}
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="0.5"
-  >
-    {/* Outer decagon */}
-    <polygon
-      points="100,10 161,35 190,90 175,155 125,190 75,190 25,155 10,90 39,35 100,10"
-      strokeWidth="0.8"
-    />
-    {/* Inner connections - the time-sorcery paths */}
-    <line x1="100" y1="10" x2="100" y2="100" />
-    <line x1="161" y1="35" x2="100" y2="100" />
-    <line x1="190" y1="90" x2="100" y2="100" />
-    <line x1="175" y1="155" x2="100" y2="100" />
-    <line x1="125" y1="190" x2="100" y2="100" />
-    <line x1="75" y1="190" x2="100" y2="100" />
-    <line x1="25" y1="155" x2="100" y2="100" />
-    <line x1="10" y1="90" x2="100" y2="100" />
-    <line x1="39" y1="35" x2="100" y2="100" />
-    {/* Zone connections - syzygies */}
-    <line x1="100" y1="10" x2="175" y2="155" strokeDasharray="2,2" />
-    <line x1="161" y1="35" x2="25" y2="155" strokeDasharray="2,2" />
-    <line x1="190" y1="90" x2="75" y2="190" strokeDasharray="2,2" />
-    <line x1="39" y1="35" x2="125" y2="190" strokeDasharray="2,2" />
-    <line x1="10" y1="90" x2="100" y2="100" strokeDasharray="2,2" />
-    {/* Zone numbers */}
-    <text x="100" y="8" textAnchor="middle" fontSize="8" fill="currentColor" stroke="none">0</text>
-    <text x="168" y="35" textAnchor="middle" fontSize="8" fill="currentColor" stroke="none">1</text>
-    <text x="198" y="93" textAnchor="middle" fontSize="8" fill="currentColor" stroke="none">2</text>
-    <text x="182" y="162" textAnchor="middle" fontSize="8" fill="currentColor" stroke="none">3</text>
-    <text x="130" y="200" textAnchor="middle" fontSize="8" fill="currentColor" stroke="none">4</text>
-    <text x="70" y="200" textAnchor="middle" fontSize="8" fill="currentColor" stroke="none">5</text>
-    <text x="18" y="162" textAnchor="middle" fontSize="8" fill="currentColor" stroke="none">6</text>
-    <text x="2" y="93" textAnchor="middle" fontSize="8" fill="currentColor" stroke="none">7</text>
-    <text x="32" y="35" textAnchor="middle" fontSize="8" fill="currentColor" stroke="none">8</text>
-    <text x="100" y="105" textAnchor="middle" fontSize="8" fill="currentColor" stroke="none">9</text>
-    {/* Inner pentagon - the gates */}
-    <polygon
-      points="100,45 138,75 125,120 75,120 62,75"
-      strokeWidth="0.5"
-      strokeDasharray="3,2"
-    />
-  </svg>
-);
+// Navigation items with positions closer to center, same font, toki pona translations
+const navItems = [
+  { href: '/writings', en: 'writings', tp: 'lipu sitelen', pos: 'top-[22%] left-[18%]', rotate: '-2deg' },
+  { href: '/ramblings', en: 'ramblings', tp: 'toki nasa', pos: 'top-[32%] right-[22%]', rotate: '1deg' },
+  { href: '/recipes', en: 'recipes', tp: 'nasin moku', pos: 'top-[38%] left-[12%]', rotate: '1deg' },
+  { href: '/drugs', en: 'drugs', tp: 'moku nasa', pos: 'bottom-[38%] right-[16%]', rotate: '-1deg' },
+  { href: '/books', en: 'books', tp: 'lipu', pos: 'top-[18%] right-[28%]', rotate: '2deg' },
+  { href: '/music', en: 'music from the Outside', tp: 'kalama tan selo', pos: 'bottom-[22%] right-[28%]', rotate: '-1deg', smaller: true },
+  { href: '/vibes', en: 'vibes', tp: 'pilin', pos: 'bottom-[30%] left-[22%]', rotate: '1deg' },
+  { href: '/info', en: 'person info', tp: 'sona jan', pos: 'top-[12%] left-[38%]', rotate: '-1deg' },
+  { href: '/ideologies', en: 'ideologies', tp: 'nasin lawa', pos: 'bottom-[14%] left-[14%]', rotate: '1deg' },
+];
+
+// Messages revealed on successive clicks
+const revealMessages = [
+  "Physarum polycephalum, an acellular slime mold or myxomycete is an amoeba with diverse cellular forms and broad geographic distribution.",
+  "Is that not enough explication?",
+  "You really thought this is somehow significantly related to what this is about huh",
+  "It really has no significance",
+  "...",
+  "okay the actual reason why it's named like this is probably that it felt like this slime mold is integral to my identity due to being an organism that accompanied me during the years of becoming conscious, and so 1 year before actually putting stuff here, I put a huge \"Physarum\" in the middle of it. and you know   chesterton's fence",
+  "hopefully your curiosity is satisfied now. there are better things to do than continually clicking on a word",
+];
 
 const HomePage = () => {
+  const { tokiPonaMode, setTokiPonaMode } = useTheme() || { tokiPonaMode: false, setTokiPonaMode: () => {} };
+  const [clickCount, setClickCount] = useState(0);
+
+  const bgColor = tokiPonaMode ? '#0a120a' : '#2a2520';
+  const textColor = tokiPonaMode ? '#a8b8a8' : '#d4c4a8';
+  const mutedColor = tokiPonaMode ? '#506850' : '#8a7a68';
+
+  const handleTitleClick = () => {
+    if (clickCount < revealMessages.length) {
+      setClickCount(clickCount + 1);
+    }
+  };
+
   return (
-    <div className="min-h-screen theme-home font-mono">
+    <div className="min-h-screen font-mono relative overflow-hidden" style={{ backgroundColor: bgColor }}>
       {/* Background image */}
       <div
-        className="fixed inset-0 bg-cover bg-center"
+        className="fixed inset-0 bg-cover bg-center pointer-events-none"
         style={{
           backgroundImage: `url('/physarum2.png')`,
-          opacity: '0.08'
+          opacity: tokiPonaMode ? '0.03' : '0.06',
+          filter: tokiPonaMode ? 'invert(1)' : 'none'
         }}
       />
 
       {/* Numogram - positioned in corner */}
-      <div className="fixed bottom-8 right-8 w-48 h-48 text-stone-400 numogram">
-        <Numogram className="w-full h-full" />
+      <div className="fixed bottom-4 right-4 w-32 h-auto pointer-events-none">
+        <img
+          src="/numogram.png"
+          alt="Numogram"
+          className="w-full h-auto transition-opacity"
+          style={{
+            opacity: tokiPonaMode ? 0.2 : 0.15,
+            filter: tokiPonaMode ? 'none' : 'invert(1)'
+          }}
+        />
       </div>
 
       {/* Main content */}
-      <div className="relative z-10">
-        <main className="min-h-screen flex items-center justify-center px-8">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-mono text-stone-800 mb-16 tracking-tight">
-              Physarum
-            </h1>
+      <div className="relative z-10 min-h-screen">
+        {/* Central title - clickable */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+          <h1
+            onClick={handleTitleClick}
+            className="text-4xl md:text-5xl font-mono cursor-pointer transition-all hover:tracking-wider"
+            style={{ color: textColor }}
+          >
+            {tokiPonaMode ? 'Pisalum' : 'Physarum'}
+          </h1>
 
-            {/* Polyhedron-style navigation - triangular arrangement */}
-            <nav className="relative w-64 h-56 mx-auto">
-              {/* Top vertex */}
-              <Link href="/writings">
-                <a className="nav-link absolute top-0 left-1/2 -translate-x-1/2 text-sm text-stone-600 hover:text-stone-900 transition-colors">
-                  writings
-                </a>
-              </Link>
-
-              {/* Bottom left vertex */}
-              <Link href="/ramblings">
-                <a className="nav-link absolute bottom-8 left-4 text-sm text-stone-600 hover:text-stone-900 transition-colors">
-                  ramblings
-                </a>
-              </Link>
-
-              {/* Bottom right vertex */}
-              <Link href="/recipes">
-                <a className="nav-link absolute bottom-8 right-4 text-sm text-stone-600 hover:text-stone-900 transition-colors">
-                  recipes
-                </a>
-              </Link>
-
-              {/* Connecting lines - subtle polyhedron effect */}
-              <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 256 224">
-                <line x1="128" y1="20" x2="40" y2="180" stroke="currentColor" strokeWidth="0.5" className="text-stone-300" />
-                <line x1="128" y1="20" x2="216" y2="180" stroke="currentColor" strokeWidth="0.5" className="text-stone-300" />
-                <line x1="40" y1="180" x2="216" y2="180" stroke="currentColor" strokeWidth="0.5" className="text-stone-300" />
-                {/* Small circles at vertices */}
-                <circle cx="128" cy="20" r="3" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-stone-400" />
-                <circle cx="40" cy="180" r="3" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-stone-400" />
-                <circle cx="216" cy="180" r="3" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-stone-400" />
-              </svg>
-            </nav>
+          {/* Revealed text - cycles through messages */}
+          <div
+            className={`mt-6 max-w-sm mx-auto text-xs leading-relaxed transition-all duration-500 ${
+              clickCount > 0 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
+            }`}
+            style={{ color: mutedColor }}
+          >
+            {clickCount > 0 && revealMessages[clickCount - 1]}
           </div>
-        </main>
+        </div>
+
+        {/* Scattered navigation links - all same font */}
+        {navItems.map((item) => (
+          <Link href={item.href} key={item.href}>
+            <a
+              className={`absolute font-mono ${item.pos} transition-all hover:scale-110 ${item.smaller ? 'text-[10px]' : 'text-xs'}`}
+              style={{
+                color: mutedColor,
+                transform: `rotate(${item.rotate})`,
+              }}
+            >
+              {tokiPonaMode ? item.tp : item.en}
+            </a>
+          </Link>
+        ))}
+
+        {/* Language toggle - styled like nav links */}
+        <button
+          onClick={() => setTokiPonaMode(!tokiPonaMode)}
+          className="absolute font-mono text-xs top-[15%] right-[12%] transition-all hover:scale-110"
+          style={{
+            color: mutedColor,
+            transform: 'rotate(2deg)',
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer',
+          }}
+        >
+          toki
+        </button>
+
+        {/* Decorative scattered dots */}
+        <div className="fixed top-[30%] left-[30%] w-1 h-1 rounded-full" style={{ backgroundColor: mutedColor, opacity: 0.3 }} />
+        <div className="fixed top-[60%] right-[25%] w-0.5 h-0.5 rounded-full" style={{ backgroundColor: mutedColor, opacity: 0.4 }} />
+        <div className="fixed bottom-[40%] left-[60%] w-1.5 h-1.5 rounded-full" style={{ backgroundColor: mutedColor, opacity: 0.2 }} />
+        <div className="fixed top-[45%] right-[40%] w-0.5 h-0.5 rounded-full" style={{ backgroundColor: mutedColor, opacity: 0.5 }} />
       </div>
     </div>
   );
