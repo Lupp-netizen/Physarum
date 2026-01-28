@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useTheme } from './_app';
 
-// Navigation items with their positions, fonts, and toki pona translations
+// Navigation items with positions closer to center, same font, toki pona translations
 const navItems = [
-  { href: '/writings', en: 'writings', tp: 'lipu sitelen', font: 'font-mono', pos: 'top-[15%] left-[12%]', rotate: '-3deg' },
-  { href: '/ramblings', en: 'ramblings', tp: 'toki nasa', font: 'font-vt323 text-lg', pos: 'top-[22%] right-[18%]', rotate: '2deg' },
-  { href: '/recipes', en: 'recipes', tp: 'nasin moku', font: 'font-special-elite', pos: 'bottom-[35%] left-[8%]', rotate: '1deg' },
-  { href: '/drugs', en: 'drugs', tp: 'kili nasa', font: 'font-courier italic', pos: 'top-[38%] right-[10%]', rotate: '-2deg' },
-  { href: '/books', en: 'books', tp: 'lipu', font: 'font-cutive', pos: 'bottom-[28%] right-[15%]', rotate: '3deg' },
-  { href: '/music', en: 'music from the Outside', tp: 'kalama tan selo', font: 'font-share-tech', pos: 'top-[55%] left-[5%]', rotate: '-1deg', smaller: true },
-  { href: '/vibes', en: 'vibes', tp: 'pilin', font: 'font-xanh italic', pos: 'bottom-[18%] left-[25%]', rotate: '2deg' },
-  { href: '/info', en: 'person info', tp: 'sona jan', font: 'font-mono', pos: 'top-[12%] left-[45%]', rotate: '-1deg' },
-  { href: '/ideologies', en: 'ideologies', tp: 'nasin lawa', font: 'font-vt323 text-lg', pos: 'bottom-[12%] right-[8%]', rotate: '1deg' },
+  { href: '/writings', en: 'writings', tp: 'lipu sitelen', pos: 'top-[25%] left-[22%]', rotate: '-2deg' },
+  { href: '/ramblings', en: 'ramblings', tp: 'toki nasa', pos: 'top-[28%] right-[24%]', rotate: '1deg' },
+  { href: '/recipes', en: 'recipes', tp: 'nasin moku', pos: 'bottom-[38%] left-[18%]', rotate: '1deg' },
+  { href: '/drugs', en: 'drugs', tp: 'moku nasa', pos: 'top-[42%] right-[20%]', rotate: '-1deg' },
+  { href: '/books', en: 'books', tp: 'lipu', pos: 'bottom-[32%] right-[22%]', rotate: '2deg' },
+  { href: '/music', en: 'music from the Outside', tp: 'kalama tan selo', pos: 'top-[58%] left-[15%]', rotate: '-1deg', smaller: true },
+  { href: '/vibes', en: 'vibes', tp: 'pilin', pos: 'bottom-[25%] left-[30%]', rotate: '1deg' },
+  { href: '/info', en: 'person info', tp: 'sona jan', pos: 'top-[18%] left-[42%]', rotate: '-1deg' },
+  { href: '/ideologies', en: 'ideologies', tp: 'nasin lawa', pos: 'bottom-[20%] right-[18%]', rotate: '1deg' },
 ];
 
 const HomePage = () => {
@@ -48,19 +48,6 @@ const HomePage = () => {
         />
       </div>
 
-      {/* Theme/Language toggle button */}
-      <button
-        onClick={() => setTokiPonaMode(!tokiPonaMode)}
-        className="fixed top-4 right-4 z-50 px-3 py-1 text-xs font-mono border transition-all hover:scale-105"
-        style={{
-          borderColor: mutedColor,
-          color: mutedColor,
-          backgroundColor: 'transparent'
-        }}
-      >
-        {tokiPonaMode ? 'EN' : 'TP'}
-      </button>
-
       {/* Main content */}
       <div className="relative z-10 min-h-screen">
         {/* Central title - clickable */}
@@ -80,17 +67,15 @@ const HomePage = () => {
             }`}
             style={{ color: mutedColor }}
           >
-            {tokiPonaMode
-              ? 'mi kama tan ma ante. mi awen lon ni. mi tawa.'
-              : 'a slime mold learning to think. somewhere between organism and algorithm.'}
+            No particular significance.
           </div>
         </div>
 
-        {/* Scattered navigation links */}
-        {navItems.map((item, i) => (
+        {/* Scattered navigation links - all same font */}
+        {navItems.map((item) => (
           <Link href={item.href} key={item.href}>
             <a
-              className={`absolute ${item.font} ${item.pos} transition-all hover:scale-110 ${item.smaller ? 'text-[10px]' : 'text-xs'}`}
+              className={`absolute font-mono ${item.pos} transition-all hover:scale-110 ${item.smaller ? 'text-[10px]' : 'text-xs'}`}
               style={{
                 color: mutedColor,
                 transform: `rotate(${item.rotate})`,
@@ -100,6 +85,21 @@ const HomePage = () => {
             </a>
           </Link>
         ))}
+
+        {/* Language toggle - styled like nav links */}
+        <button
+          onClick={() => setTokiPonaMode(!tokiPonaMode)}
+          className="absolute font-mono text-xs top-[15%] right-[12%] transition-all hover:scale-110"
+          style={{
+            color: mutedColor,
+            transform: 'rotate(2deg)',
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer',
+          }}
+        >
+          toki
+        </button>
 
         {/* Decorative scattered dots */}
         <div className="fixed top-[30%] left-[30%] w-1 h-1 rounded-full" style={{ backgroundColor: mutedColor, opacity: 0.3 }} />
