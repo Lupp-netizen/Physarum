@@ -15,13 +15,30 @@ const navItems = [
   { href: '/ideologies', en: 'ideologies', tp: 'nasin lawa', pos: 'bottom-[14%] left-[14%]', rotate: '1deg' },
 ];
 
+// Messages revealed on successive clicks
+const revealMessages = [
+  "Physarum polycephalum, an acellular slime mold or myxomycete is an amoeba with diverse cellular forms and broad geographic distribution.",
+  "Is that not enough explication?",
+  "You really thought this is somehow significantly related to what this is about huh",
+  "It really has no significance",
+  "...",
+  "okay the actual reason why it's named like this is probably that it felt like this slime mold is integral to my identity due to being an organism that accompanied me during the years of becoming conscious, and so 1 year before actually putting stuff here, I put a huge \"Physarum\" in the middle of it. and you know   chesterton's fence",
+  "hopefully your curiosity is satisfied now. there are better things to do than continually clicking on a word",
+];
+
 const HomePage = () => {
   const { tokiPonaMode, setTokiPonaMode } = useTheme() || { tokiPonaMode: false, setTokiPonaMode: () => {} };
-  const [titleRevealed, setTitleRevealed] = useState(false);
+  const [clickCount, setClickCount] = useState(0);
 
   const bgColor = tokiPonaMode ? '#0a120a' : '#2a2520';
   const textColor = tokiPonaMode ? '#a8b8a8' : '#d4c4a8';
   const mutedColor = tokiPonaMode ? '#506850' : '#8a7a68';
+
+  const handleTitleClick = () => {
+    if (clickCount < revealMessages.length) {
+      setClickCount(clickCount + 1);
+    }
+  };
 
   return (
     <div className="min-h-screen font-mono relative overflow-hidden" style={{ backgroundColor: bgColor }}>
@@ -53,21 +70,21 @@ const HomePage = () => {
         {/* Central title - clickable */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
           <h1
-            onClick={() => setTitleRevealed(!titleRevealed)}
+            onClick={handleTitleClick}
             className="text-4xl md:text-5xl font-mono cursor-pointer transition-all hover:tracking-wider"
             style={{ color: textColor }}
           >
             {tokiPonaMode ? 'Pisalum' : 'Physarum'}
           </h1>
 
-          {/* Revealed text */}
+          {/* Revealed text - cycles through messages */}
           <div
-            className={`mt-6 max-w-xs mx-auto text-xs leading-relaxed transition-all duration-500 ${
-              titleRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
+            className={`mt-6 max-w-sm mx-auto text-xs leading-relaxed transition-all duration-500 ${
+              clickCount > 0 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
             }`}
             style={{ color: mutedColor }}
           >
-            No particular significance.
+            {clickCount > 0 && revealMessages[clickCount - 1]}
           </div>
         </div>
 
