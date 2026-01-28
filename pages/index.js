@@ -19,9 +19,9 @@ const HomePage = () => {
   const { tokiPonaMode, setTokiPonaMode } = useTheme() || { tokiPonaMode: false, setTokiPonaMode: () => {} };
   const [titleRevealed, setTitleRevealed] = useState(false);
 
-  const bgColor = tokiPonaMode ? '#0a0a0a' : '#f5f5f0';
-  const textColor = tokiPonaMode ? '#e0e0e0' : '#1a1a1a';
-  const mutedColor = tokiPonaMode ? '#606060' : '#707070';
+  const bgColor = tokiPonaMode ? '#0a120a' : '#2a2520';
+  const textColor = tokiPonaMode ? '#a8b8a8' : '#d4c4a8';
+  const mutedColor = tokiPonaMode ? '#506850' : '#8a7a68';
 
   return (
     <div className="min-h-screen font-mono relative overflow-hidden" style={{ backgroundColor: bgColor }}>
