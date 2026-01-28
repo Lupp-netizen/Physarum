@@ -4,15 +4,15 @@ import { useTheme } from './_app';
 
 // Navigation items with positions closer to center, same font, toki pona translations
 const navItems = [
-  { href: '/writings', en: 'writings', tp: 'lipu sitelen', pos: 'top-[25%] left-[22%]', rotate: '-2deg' },
-  { href: '/ramblings', en: 'ramblings', tp: 'toki nasa', pos: 'top-[28%] right-[24%]', rotate: '1deg' },
-  { href: '/recipes', en: 'recipes', tp: 'nasin moku', pos: 'bottom-[38%] left-[18%]', rotate: '1deg' },
-  { href: '/drugs', en: 'drugs', tp: 'moku nasa', pos: 'top-[42%] right-[20%]', rotate: '-1deg' },
-  { href: '/books', en: 'books', tp: 'lipu', pos: 'bottom-[32%] right-[22%]', rotate: '2deg' },
-  { href: '/music', en: 'music from the Outside', tp: 'kalama tan selo', pos: 'top-[58%] left-[15%]', rotate: '-1deg', smaller: true },
-  { href: '/vibes', en: 'vibes', tp: 'pilin', pos: 'bottom-[25%] left-[30%]', rotate: '1deg' },
-  { href: '/info', en: 'person info', tp: 'sona jan', pos: 'top-[18%] left-[42%]', rotate: '-1deg' },
-  { href: '/ideologies', en: 'ideologies', tp: 'nasin lawa', pos: 'bottom-[20%] right-[18%]', rotate: '1deg' },
+  { href: '/writings', en: 'writings', tp: 'lipu sitelen', pos: 'top-[22%] left-[18%]', rotate: '-2deg' },
+  { href: '/ramblings', en: 'ramblings', tp: 'toki nasa', pos: 'top-[32%] right-[22%]', rotate: '1deg' },
+  { href: '/recipes', en: 'recipes', tp: 'nasin moku', pos: 'top-[38%] left-[12%]', rotate: '1deg' },
+  { href: '/drugs', en: 'drugs', tp: 'moku nasa', pos: 'bottom-[38%] right-[16%]', rotate: '-1deg' },
+  { href: '/books', en: 'books', tp: 'lipu', pos: 'top-[18%] right-[28%]', rotate: '2deg' },
+  { href: '/music', en: 'music from the Outside', tp: 'kalama tan selo', pos: 'bottom-[22%] right-[28%]', rotate: '-1deg', smaller: true },
+  { href: '/vibes', en: 'vibes', tp: 'pilin', pos: 'bottom-[30%] left-[22%]', rotate: '1deg' },
+  { href: '/info', en: 'person info', tp: 'sona jan', pos: 'top-[12%] left-[38%]', rotate: '-1deg' },
+  { href: '/ideologies', en: 'ideologies', tp: 'nasin lawa', pos: 'bottom-[14%] left-[14%]', rotate: '1deg' },
 ];
 
 const HomePage = () => {
