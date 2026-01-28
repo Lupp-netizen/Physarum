@@ -42,12 +42,22 @@ const RamblingsPage = () => {
 
   return (
     <div className="min-h-screen font-mono" style={{ backgroundColor: '#0a0a12' }}>
-      {/* Numogram - positioned on the side */}
+      {/* Numogram - positioned on the left side */}
       <div className="fixed left-4 top-1/2 -translate-y-1/2 w-28 h-auto hidden lg:block">
         <img
           src="/numogram.png"
           alt="Numogram"
           className="w-full h-auto opacity-30 hover:opacity-50 transition-opacity"
+        />
+      </div>
+
+      {/* Reticulum - positioned on the right side */}
+      <div className="fixed right-4 top-1/2 -translate-y-1/2 w-36 h-auto hidden lg:block">
+        <img
+          src="/reticulum.png"
+          alt="Reticulum"
+          className="w-full h-auto opacity-20 hover:opacity-40 transition-opacity"
+          style={{ filter: 'saturate(0.7)' }}
         />
       </div>
 
