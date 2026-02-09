@@ -1,45 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
+import { getSortedPostsData } from '../lib/posts';
 
-const WritingsPage = () => {
-  const posts = [
-    {
-      id: 1,
-      title: "Aaaa Aaaa Aaaa Aaaa",
-      date: "January 28, 2026",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "first-writing"
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
     },
-    {
-      id: 2,
-      title: "Aaaa Aaaa Aaaa",
-      date: "January 15, 2026",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "second-writing"
-    },
-    {
-      id: 3,
-      title: "Aaaa Aaaa Aaaa Aaaa Aaaa",
-      date: "December 22, 2025",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "third-writing"
-    },
-    {
-      id: 4,
-      title: "Aaaa Aaaa",
-      date: "December 10, 2025",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "fourth-writing"
-    },
-    {
-      id: 5,
-      title: "Aaaa Aaaa Aaaa Aaaa",
-      date: "November 30, 2025",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "fifth-writing"
-    }
-  ];
+  };
+}
 
+const WritingsPage = ({ allPostsData }) => {
   return (
     <div className="min-h-screen font-mono" style={{ backgroundColor: '#2a2520' }}>
       {/* Content area with sepia background */}
@@ -59,24 +31,39 @@ const WritingsPage = () => {
 
         <main className="px-8 pb-16">
           <div className="max-w-2xl mx-auto space-y-12">
-            {posts.map((post) => (
-              <article key={post.id} className="border-b pb-8" style={{ borderColor: 'rgba(26, 23, 20, 0.2)' }}>
-                <h2 className="text-xl font-mono mb-2" style={{ color: '#1a1714' }}>
-                  {post.title}
-                </h2>
-                <div className="text-xs mb-4" style={{ color: 'rgba(26, 23, 20, 0.6)' }}>
-                  {post.date}
-                </div>
-                <p className="text-sm leading-relaxed mb-4" style={{ color: '#1a1714' }}>
-                  {post.excerpt}
-                </p>
-                <Link href={`/writings/${post.slug}`}>
-                  <a className="text-xs hover:underline" style={{ color: 'rgba(26, 23, 20, 0.8)' }}>
-                    read more &rarr;
-                  </a>
-                </Link>
-              </article>
-            ))}
+            {allPostsData.length === 0 ? (
+              <p className="text-sm" style={{ color: 'rgba(26, 23, 20, 0.6)' }}>
+                No writings yet. Add markdown files to content/writings/
+              </p>
+            ) : (
+              allPostsData.map((post) => (
+                <article key={post.slug} className="border-b pb-8" style={{ borderColor: 'rgba(26, 23, 20, 0.2)' }}>
+                  <h2 className="text-xl font-mono mb-2" style={{ color: '#1a1714' }}>
+                    {post.title}
+                  </h2>
+                  <div className="text-xs mb-4" style={{ color: 'rgba(26, 23, 20, 0.6)' }}>
+                    {post.date}
+                    {post.tags && post.tags.length > 0 && (
+                      <span className="ml-4">
+                        {post.tags.map(tag => (
+                          <span key={tag} className="mr-2">#{tag}</span>
+                        ))}
+                      </span>
+                    )}
+                  </div>
+                  {post.excerpt && (
+                    <p className="text-sm leading-relaxed mb-4" style={{ color: '#1a1714' }}>
+                      {post.excerpt}
+                    </p>
+                  )}
+                  <Link href={`/writings/${post.slug}`}>
+                    <a className="text-xs hover:underline" style={{ color: 'rgba(26, 23, 20, 0.8)' }}>
+                      read more &rarr;
+                    </a>
+                  </Link>
+                </article>
+              ))
+            )}
           </div>
         </main>
       </div>
