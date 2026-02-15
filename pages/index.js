@@ -13,17 +13,18 @@ const navItems = [
   { href: '/vibes', en: 'vibes', tp: 'pilin', pos: 'bottom-[30%] left-[22%]', rotate: '1deg' },
   { href: '/info', en: 'person info', tp: 'sona jan', pos: 'top-[12%] left-[38%]', rotate: '-1deg' },
   { href: '/ideologies', en: 'ideologies', tp: 'nasin lawa', pos: 'bottom-[14%] left-[14%]', rotate: '1deg' },
+  { href: '/tonal-musings', en: 'tonal musings', tp: 'kalama', pos: 'bottom-[10%] right-[40%]', rotate: '-1deg' },
 ];
 
 // Messages revealed on successive clicks
 const revealMessages = [
   "Physarum polycephalum, an acellular slime mold or myxomycete is an amoeba with diverse cellular forms and broad geographic distribution.",
-  "Is that not enough explication?",
-  "You really thought this is somehow significantly related to what this is about huh",
-  "It really has no significance",
+  "lou: name of the person who puts things here. Also known as Pavrati Jain",
+  "help: pls help",
+  <>Welcome to louphysarum.help, the digital slimemold of lou!<br />Click on various words to reveal various information if you want! This exists mostly as a <a href="https://logangraves.com/website" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>search query</a>, so please have a really low bar for contacting to talk about anything.</>,
   "...",
-  "okay the actual reason why it's named like this is probably that it felt like this slime mold is integral to my identity due to being an organism that accompanied me during the years of becoming conscious, and so 1 year before actually putting stuff here, I put a huge \"Physarum\" in the middle of it. and you know   chesterton's fence",
-  "hopefully your curiosity is satisfied now. there are better things to do than continually clicking on a word",
+  "@logaems on discord, @pavrati on X, @physarumpavrati on Substack, Pjain on LessWrong",
+  "thanks for spending the past few seconds clicking on this word! highly appreciated.",
 ];
 
 const HomePage = () => {
