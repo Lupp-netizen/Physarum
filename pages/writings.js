@@ -39,7 +39,11 @@ const WritingsPage = ({ allPostsData }) => {
               allPostsData.map((post) => (
                 <article key={post.slug} className="border-b pb-8" style={{ borderColor: 'rgba(26, 23, 20, 0.2)' }}>
                   <h2 className="text-xl font-mono mb-2" style={{ color: '#1a1714' }}>
-                    {post.title}
+                    {post.linkUrl ? (
+                      <a href={post.linkUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                        {post.title} <span className="text-xs" style={{ color: 'rgba(26, 23, 20, 0.5)' }}>[linkpost]</span>
+                      </a>
+                    ) : post.title}
                   </h2>
                   <div className="text-xs mb-4" style={{ color: 'rgba(26, 23, 20, 0.6)' }}>
                     {post.date}
@@ -51,16 +55,28 @@ const WritingsPage = ({ allPostsData }) => {
                       </span>
                     )}
                   </div>
-                  {post.excerpt && (
+                  {post.tldr && (
+                    <div className="text-sm leading-relaxed mb-3 pl-3" style={{ color: '#1a1714', borderLeft: '2px solid rgba(26, 23, 20, 0.3)' }}>
+                      <span className="text-xs font-bold" style={{ color: 'rgba(26, 23, 20, 0.5)' }}>TL;DR: </span>
+                      {post.tldr}
+                    </div>
+                  )}
+                  {post.excerpt && !post.tldr && (
                     <p className="text-sm leading-relaxed mb-4" style={{ color: '#1a1714' }}>
                       {post.excerpt}
                     </p>
                   )}
-                  <Link href={`/writings/${post.slug}`}>
-                    <a className="text-xs hover:underline" style={{ color: 'rgba(26, 23, 20, 0.8)' }}>
-                      read more &rarr;
+                  {post.linkUrl ? (
+                    <a href={post.linkUrl} target="_blank" rel="noopener noreferrer" className="text-xs hover:underline" style={{ color: 'rgba(26, 23, 20, 0.8)' }}>
+                      read on LessWrong &rarr;
                     </a>
-                  </Link>
+                  ) : (
+                    <Link href={`/writings/${post.slug}`}>
+                      <a className="text-xs hover:underline" style={{ color: 'rgba(26, 23, 20, 0.8)' }}>
+                        read more &rarr;
+                      </a>
+                    </Link>
+                  )}
                 </article>
               ))
             )}

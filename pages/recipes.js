@@ -37,6 +37,34 @@ const RecipesPage = () => {
       date: "December 5, 2025",
       excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
       slug: "fifth-recipe"
+    },
+    {
+      id: 6,
+      title: "savoury intercultural hot fluid",
+      date: "",
+      excerpt: "",
+      slug: "savoury-intercultural-hot-fluid"
+    },
+    {
+      id: 7,
+      title: "Bioenergetic ice cream",
+      date: "",
+      excerpt: "",
+      slug: "bioenergetic-ice-cream"
+    },
+    {
+      id: 8,
+      title: "Tea archive",
+      date: "",
+      excerpt: "",
+      slug: "tea-archive"
+    },
+    {
+      id: 9,
+      title: "Good things (like sugar) are good",
+      date: "",
+      excerpt: "",
+      slug: "good-things-like-sugar-are-good"
     }
   ];
 
