@@ -4,41 +4,6 @@ import Link from 'next/link';
 const RecipesPage = () => {
   const posts = [
     {
-      id: 1,
-      title: "Aaaa Aaaa Aaaa",
-      date: "January 20, 2026",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "first-recipe"
-    },
-    {
-      id: 2,
-      title: "Aaaa Aaaa Aaaa Aaaa",
-      date: "January 12, 2026",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "second-recipe"
-    },
-    {
-      id: 3,
-      title: "Aaaa Aaaa",
-      date: "December 30, 2025",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "third-recipe"
-    },
-    {
-      id: 4,
-      title: "Aaaa Aaaa Aaaa Aaaa Aaaa",
-      date: "December 18, 2025",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "fourth-recipe"
-    },
-    {
-      id: 5,
-      title: "Aaaa Aaaa Aaaa",
-      date: "December 5, 2025",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "fifth-recipe"
-    },
-    {
       id: 6,
       title: "savoury intercultural hot fluid",
       date: "",
@@ -65,7 +30,21 @@ const RecipesPage = () => {
       date: "",
       excerpt: "",
       slug: "good-things-like-sugar-are-good"
-    }
+    },
+    {
+      id: 4,
+      title: "Aaaa Aaaa Aaaa Aaaa Aaaa",
+      date: "December 18, 2025",
+      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
+      slug: "fourth-recipe"
+    },
+    {
+      id: 5,
+      title: "Aaaa Aaaa Aaaa",
+      date: "December 5, 2025",
+      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
+      slug: "fifth-recipe"
+    },
   ];
 
   return (
