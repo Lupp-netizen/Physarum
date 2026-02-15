@@ -3,18 +3,17 @@ import Link from 'next/link';
 import { useTheme } from './_app';
 
 // Navigation items with positions closer to center, same font, toki pona translations
-// cx/cy = percentage coordinates for SVG lines; thick = thicker line to center
 const navItems = [
-  { href: '/writings', en: 'writings', tp: 'lipu sitelen', pos: 'top-[22%] left-[18%]', rotate: '-2deg', cx: 18, cy: 22, thick: true },
-  { href: '/ramblings', en: 'ramblings', tp: 'toki nasa', pos: 'top-[32%] right-[22%]', rotate: '1deg', cx: 78, cy: 32, thick: true },
-  { href: '/recipes', en: 'recipes', tp: 'nasin moku', pos: 'top-[38%] left-[12%]', rotate: '1deg', cx: 12, cy: 38 },
-  { href: '/drugs', en: 'drugs', tp: 'moku nasa', pos: 'bottom-[38%] right-[16%]', rotate: '-1deg', cx: 84, cy: 62 },
-  { href: '/books', en: 'books', tp: 'lipu', pos: 'top-[18%] right-[28%]', rotate: '2deg', cx: 72, cy: 18 },
-  { href: '/music', en: 'music from the Outside', tp: 'kalama tan selo', pos: 'bottom-[22%] right-[28%]', rotate: '-1deg', smaller: true, cx: 72, cy: 78 },
-  { href: '/vibes', en: 'vibes', tp: 'pilin', pos: 'bottom-[30%] left-[22%]', rotate: '1deg', cx: 22, cy: 70 },
-  { href: '/info', en: 'person info', tp: 'sona jan', pos: 'top-[12%] left-[38%]', rotate: '-1deg', cx: 38, cy: 12, thick: true },
-  { href: '/ideologies', en: 'ideologies', tp: 'nasin lawa', pos: 'bottom-[14%] left-[14%]', rotate: '1deg', cx: 14, cy: 86 },
-  { href: '/tonal-musings', en: 'tonal musings', tp: 'kalama', pos: 'bottom-[10%] right-[40%]', rotate: '-1deg', cx: 60, cy: 90 },
+  { href: '/writings', en: 'writings', tp: 'lipu sitelen', pos: 'top-[22%] left-[18%]', rotate: '-2deg' },
+  { href: '/ramblings', en: 'ramblings', tp: 'toki nasa', pos: 'top-[32%] right-[22%]', rotate: '1deg' },
+  { href: '/recipes', en: 'recipes', tp: 'nasin moku', pos: 'top-[38%] left-[12%]', rotate: '1deg' },
+  { href: '/drugs', en: 'drugs', tp: 'moku nasa', pos: 'bottom-[38%] right-[16%]', rotate: '-1deg' },
+  { href: '/books', en: 'books', tp: 'lipu', pos: 'top-[18%] right-[28%]', rotate: '2deg' },
+  { href: '/music', en: 'music from the Outside', tp: 'kalama tan selo', pos: 'bottom-[22%] right-[28%]', rotate: '-1deg', smaller: true },
+  { href: '/vibes', en: 'vibes', tp: 'pilin', pos: 'bottom-[30%] left-[22%]', rotate: '1deg' },
+  { href: '/info', en: 'person info', tp: 'sona jan', pos: 'top-[12%] left-[38%]', rotate: '-1deg' },
+  { href: '/ideologies', en: 'ideologies', tp: 'nasin lawa', pos: 'bottom-[14%] left-[14%]', rotate: '1deg' },
+  { href: '/tonal-musings', en: 'tonal musings', tp: 'kalama', pos: 'bottom-[10%] right-[40%]', rotate: '-1deg' },
 ];
 
 // Messages revealed on successive clicks
@@ -66,29 +65,6 @@ const HomePage = () => {
           }}
         />
       </div>
-
-      {/* SVG lines connecting nav items to center Physarum */}
-      <svg
-        className="fixed inset-0 w-full h-full pointer-events-none"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        style={{ zIndex: 5 }}
-      >
-        {navItems.map((item) => (
-          <line
-            key={item.href}
-            x1={item.cx}
-            y1={item.cy}
-            x2={50}
-            y2={50}
-            stroke={mutedColor}
-            strokeWidth={item.thick ? 0.15 : 0.07}
-            opacity={0.35}
-          />
-        ))}
-        {/* Extra line: tonal musings → music from the Outside */}
-        <line x1={60} y1={90} x2={72} y2={78} stroke={mutedColor} strokeWidth={0.07} opacity={0.35} />
-      </svg>
 
       {/* Main content */}
       <div className="relative z-10 min-h-screen">
