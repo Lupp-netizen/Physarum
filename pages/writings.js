@@ -43,7 +43,14 @@ const WritingsPage = ({ allPostsData }) => {
                       <a href={post.linkUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
                         {post.title} <span className="text-xs" style={{ color: 'rgba(26, 23, 20, 0.5)' }}>[linkpost]</span>
                       </a>
-                    ) : post.title}
+                    ) : (
+                      <>
+                        {post.title}
+                        {post.crosspostUrl && (
+                          <span className="text-xs ml-2" style={{ color: 'rgba(26, 23, 20, 0.5)' }}>[crosspost]</span>
+                        )}
+                      </>
+                    )}
                   </h2>
                   <div className="text-xs mb-4" style={{ color: 'rgba(26, 23, 20, 0.6)' }}>
                     {post.date}
@@ -71,11 +78,18 @@ const WritingsPage = ({ allPostsData }) => {
                       read on LessWrong &rarr;
                     </a>
                   ) : (
-                    <Link href={`/writings/${post.slug}`}>
-                      <a className="text-xs hover:underline" style={{ color: 'rgba(26, 23, 20, 0.8)' }}>
-                        read more &rarr;
-                      </a>
-                    </Link>
+                    <span className="flex items-center gap-4">
+                      <Link href={`/writings/${post.slug}`}>
+                        <a className="text-xs hover:underline" style={{ color: 'rgba(26, 23, 20, 0.8)' }}>
+                          read &rarr;
+                        </a>
+                      </Link>
+                      {post.crosspostUrl && (
+                        <a href={post.crosspostUrl} target="_blank" rel="noopener noreferrer" className="text-xs hover:underline" style={{ color: 'rgba(26, 23, 20, 0.5)' }}>
+                          originally on idealistscollective.org &rarr;
+                        </a>
+                      )}
+                    </span>
                   )}
                 </article>
               ))
