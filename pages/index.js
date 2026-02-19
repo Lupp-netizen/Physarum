@@ -45,19 +45,19 @@ const HomePage = () => {
     "lou: name of the person who puts things here. Also known as Pavrati Jain",
     "help: pls help",
     <>
-      so far, most of this website is edited either by my bot Pantalaimon or claude code.{' '}
+      Welcome to louphysarum.help, the digital slimemold of lou!{' '}
+      Click on various words to reveal various information if you want! This exists mostly as a{' '}
+      <a href="https://logangraves.com/website" target="_blank" rel="noopener noreferrer" style={linkStyle}>search query</a>,{' '}
+      so please have a really low bar for contacting to talk about anything.
+    </>,
+    <>
+     so far, most of this website is edited either by my bot Pantalaimon or claude code.{' '}
       to see the plain version, click on{' '}
       <button onClick={(e) => { e.stopPropagation(); setPlainMode(true); }} style={{ ...linkStyle, background: 'none', border: 'none', cursor: 'pointer', font: 'inherit', padding: 0 }}>[plain]</button>.{' '}
       to leave anonymous feedback, click{' '}
       <a href="https://www.admonymous.co/lou-pjain" target="_blank" rel="noopener noreferrer" style={linkStyle}>[critique]</a>.{' '}
       to give live feedback, click{' '}
       <a href="https://calendly.com/loulive" target="_blank" rel="noopener noreferrer" style={linkStyle}>[live feedback - lou]</a>.
-    </>,
-    <>
-      Welcome to louphysarum.help, the digital slimemold of lou!{' '}
-      Click on various words to reveal various information if you want! This exists mostly as a{' '}
-      <a href="https://logangraves.com/website" target="_blank" rel="noopener noreferrer" style={linkStyle}>search query</a>,{' '}
-      so please have a really low bar for contacting to talk about anything.
     </>,
     "...",
     <>
