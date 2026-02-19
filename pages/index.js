@@ -15,6 +15,7 @@ const navItems = [
   { href: '/info', en: 'person info', tp: 'sona jan', pos: 'top-[12%] left-[38%]', rotate: '-1deg' },
   { href: '/ideologies', en: 'ideologies', tp: 'nasin lawa', pos: 'bottom-[14%] left-[14%]', rotate: '1deg' },
   { href: '/tonal-musings', en: 'tonal musings', tp: 'kalama', pos: 'bottom-[10%] right-[40%]', rotate: '-1deg' },
+  { href: '/links', en: 'links', tp: 'nasin', pos: 'top-[28%] left-[28%]', rotate: '2deg' },
 ];
 
 // Color schemes: A is original, B/C/D/E... are new ones
