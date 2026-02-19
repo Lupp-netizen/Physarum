@@ -34,10 +34,11 @@ const revealMessages = [
   "Physarum polycephalum, an acellular slime mold or myxomycete is an amoeba with diverse cellular forms and broad geographic distribution.",
   "lou: name of the person who puts things here. Also known as Pavrati Jain",
   "help: pls help",
-  <>Welcome to louphysarum.help, the digital slimemold of lou!<br />Click on various words to reveal various information if you want! This exists mostly as a <a href="https://logangraves.com/website" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>search query</a>, so please have a really low bar for contacting to talk about anything.</>,
+  "so far, most of this website is edited either by my bot Pantalaimon or claude code. To see the plain version, click on [plain]. to criticize me, click on [critique]. to criticize me with live feedback, click [live feedback - lou]."
+  <>Welcome to louphysarum.help, the digital slimemold of lou! <br />Click on various words to reveal various information if you want! This exists mostly as a <a href="https://logangraves.com/website" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>search query</a>, so please have a really low bar for contacting to talk about anything.</>,
   "...",
   <>
-    find me elsewhere:{' '}
+    elsewhere:{' '}
     <a href="https://x.com/pavrati" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>X / Twitter</a>
     {', '}
     <a href="https://substack.com/@physarumpavrati" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>Substack</a>
@@ -45,7 +46,7 @@ const revealMessages = [
     <a href="https://www.lesswrong.com/users/pavrati-jain" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>LessWrong</a>
     {', @logaems on Discord'}
   </>,
-  "thanks for spending the past few seconds clicking on this word! (clicking more changes the colour scheme)",
+  "thanks for spending the past few seconds clicking on this word!",
 ];
 
 const HomePage = () => {
