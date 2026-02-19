@@ -5,39 +5,18 @@ const RamblingsPage = () => {
   const posts = [
     {
       id: 1,
-      title: "Aaaa Aaaa Aaaa Aaaa Aaaa",
-      date: "January 25, 2026",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "first-rambling"
+      title: "Snow",
+      date: "February 17, 2026",
+      excerpt: "I walk through the snow and a memory appears. It has that characteristic colouring of a mental image indistinguishable from a dream's memory — the mountains in taiwan, youthful energy and hope and curiosity...",
+      slug: "snow"
     },
     {
       id: 2,
-      title: "Aaaa Aaaa Aaaa",
-      date: "January 18, 2026",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "second-rambling"
+      title: "Noktotaxis",
+      date: "February 17, 2026",
+      excerpt: "the freedom. to do without compulsion. to act just for shits and giggles. noktotaxis moves us. suprasomniacs is what we are, us who release the soul into the night...",
+      slug: "noktotaxis"
     },
-    {
-      id: 3,
-      title: "Aaaa Aaaa Aaaa Aaaa",
-      date: "January 5, 2026",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "third-rambling"
-    },
-    {
-      id: 4,
-      title: "Aaaa Aaaa",
-      date: "December 28, 2025",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "fourth-rambling"
-    },
-    {
-      id: 5,
-      title: "Aaaa Aaaa Aaaa Aaaa Aaaa Aaaa",
-      date: "December 15, 2025",
-      excerpt: "Aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa...",
-      slug: "fifth-rambling"
-    }
   ];
 
   return (

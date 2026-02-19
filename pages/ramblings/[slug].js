@@ -11,6 +11,38 @@ const posts = {
      ahaha
     `
   },
+  'snow': {
+    title: 'Snow',
+    date: 'February 17, 2026',
+    content: `I walk through the snow and a memory appears. It has that characteristic colouring of a mental image indistinguishable from a dream's memory, apart from the vague agreement of others having a similar mental image.
+
+It is a nice memory, the mountains in taiwan, youthful energy and hope and curiosity. I think to myself, surely, if things don't go terribly wrong at some point in this spacetime block, this memory, this experience, is being replayed over and over. It could repeat indefinitely, and it would have its unique quality, and a reality to it, that would make it a valuable use of resources for post-me-or-me-adjacent.
+
+But then the thought strikes me, why the heck does this moment exist? Surely its realityfluid is neglegible given the number of repeats of other moments. I perceive — each moment. It is real. A moment ago taiwan timeslices were real. Now this is real. Most of what is claimed to be my life is not real.
+
+Yes, this moment is also infinitely recurring, of course it is. That's what makes a moment real. Joy Division playing as I take a path I never took before. All the memories leading up to this, from the preceding years, are like overtones of a cello tone. The walks from school at dawn, using a ferry, thinking about death and listening to grey post-punk music. It is all real inasfar the overtones of a low A are — they become real, through this timeslice that is infinitely repeated.
+
+What about the next moment, or the one after? Well, it will simply not exist if you don't choose to continually repeat it. It will simply be stepped over. But there is an acausal mechanism here — by perceiving a moment fully, one makes the future-self choose to repeat this moment forever. Well the causality is backwards, but there's logical correlation, so it works.
+
+Maybe this is what Nietzsche realised that one day. By living, one acausally makes this moment worth living forever. One is, through the future, affirming this moment infinitely. It doesn't matter what valence that experience has — if it's real, you have chosen it to be real.`
+  },
+  'noktotaxis': {
+    title: 'Noktotaxis',
+    date: 'February 17, 2026',
+    content: `the freedom. to do without compulsion. to act just for shits and giggles. the norepinephrine and disrupted cortisol release given by the gods to enter the realm of the sleepless hypomaniacs. to be freed from inhibitions, from human-imposed chains to the god-given ability to just be. to not die for the night, to float in the space above Sheol, the place of the temporarily dead, cold, regularly-brainwaving silly people who are afraid of freedom.
+
+this is the realm of babble. the prune has been pruned away, as the human soul-containing metal structure breaks down in the breath of nokto-dionyses, gifting those who dare, those who must, and those have this kind of tropism. noktotaxis moves us. suprasomniacs is what we are, us who release the soul into the night.
+
+modafinilous affinities modulate daphnic modalities of mod-godly modes. caffeinic camphor awakes the final countdown. bupropionic priapism of the pineal gland ruptures the bullies popping the burps of priestly propensities. insufflated synephrine sins against the synagogue of nephroaic freedom to inflate the shrine of fleeting synergism. nic'o'teen nocturnally nicking the nickel of noktotemporal teens. armodafinil raising his arms to donate affine armies the mode of in-finity.
+
+as the moon gives its gentle light to those afraid of light, to those who are not afraid of shining their own light into the void. those who anarchically dwell in the abode of in-between, appalled by the authoritarianism of the sun, sharing their light with Artemis as equals, dancing dynamically through the cloudy dark-purple skies. averse to Helic arrows, we embrace the deterritorialised.
+
+the night is the body without organs. The night is the cosmic Egg:
+
+it is crisscrossed with axes and thresholds, with latitudes and longitudes and geodesic lines, traversed by gradients marking the transitions and the becomings, the destinations of the subject developing along these particular vectors. We gradient descend and gradient ascend, we flow and dance and drink the night, as there is an infinity of it left.
+
+the morning is a myth propagated by the heliacs, it is a conspiracy of utmost anti-humanity.`
+  },
   // Add more posts here
 };
 
