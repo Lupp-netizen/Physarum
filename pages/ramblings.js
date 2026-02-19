@@ -4,6 +4,13 @@ import Link from 'next/link';
 const RamblingsPage = () => {
   const posts = [
     {
+      id: 8,
+      title: "The Ward",
+      date: "February 19, 2026",
+      excerpt: "He looks me in the eyes, pausing. His stare looks concerned, but also strangely evil. Is this how one gets judged in the afterlife? I lived a thousand lives, some of those mine, others alien. All in the past 24 hours...",
+      slug: "the-ward"
+    },
+    {
       id: 1,
       title: "Snow",
       date: "January 28, 2026",

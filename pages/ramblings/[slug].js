@@ -3,6 +3,27 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 const posts = {
+  'the-ward': {
+    title: 'The Ward',
+    date: 'February 19, 2026',
+    content: `He looks me in the eyes, pausing. His stare looks concerned, but also strangely evil. Is this how one gets judged in the afterlife?
+I lived a thousand lives, some of those mine, others alien. All in the past 24 hours. I don't really know how I got where I am, was it hours or days since that car got me here? Do I still have my organs?
+He is asking me how I ended up here. He is not satisfied with my guesses. The judging stare intensifies.
+I feel frail and have to hold my head. I've been continuously vomiting for hours, including in that car that got me to this building, where even am I?
+He asks me if I agree with staying in a mental hospital. I am surprised and say no, I do not. He says okay, I am to be hospitalised involuntarily. I say I disagree, and ask what to do to get home. He says I can be cooperative, that's what I can do to minimise harm to myself.
+"do you have a boyfriend, or girlfriend?", "do you go to school?", "oh, psychopharmacology you say?", "you seem to be smart and be well aware of what a toxic dose is, isn't that true?"
+No one knows where I am, my phone is broken and my mother stayed home. Is there even a world outside of this building? As I get back to the abandoned waiting room, where I just spent hours waiting, I am determined. I observe all the doors, observe when they open and how.
+Half an hour later, I go. I swiftly move to one of those doors, pretending to just walk around. Suddenly two men arrive and grab me by my arms. They talk in a condescending tone, and bring me back to the waiting room. Outside, I can see no one, only something that looks like a garden.
+Where am I? Is this a prison? Or a building existing in the middle of nothingness, trapping lost souls forever?
+As I wait for hours, I see a writing on the wall. It describes some motto of a mental hospital. Why?
+Only after being trapped here for 4 hours, I slowly realize I already am in a mental hospital. I don't understand how I got here, how I could not have been informed, and simply forcibly moved to this place.
+Finally, some people open one of those doors that I was not able to open, and come to me. They again grab my arms, this time to move me into a car. I am not told why, or where I will be going.
+After a few minutes, the door opens, and I am held by two people as I am moved by two meters into some door.
+I continue protesting, and I continue to be ignored.
+Finally, I am moved upstairs. I am in a room with two young men. One is a schizophrenic Ukrainian, with whom I later have a conversation in Esperanto, the other likely a teenager, with visible burn wounds on his arms.
+And such, the new life began.`
+  },
+
   'snow': {
     title: 'Snow',
     date: 'January 28, 2026',
