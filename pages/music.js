@@ -510,13 +510,16 @@ const MusicPage = () => {
               </div>
             )}
 
-            {/* Hand-drawn numogram */}
+{/* Hand-drawn numogram */}
             <div className="mt-8 mb-8">
               <img
                 src="/numogram-handdrawn.jpg"
                 alt="hand-drawn numogram diagram"
                 className="w-full max-w-md mx-auto block rounded opacity-80"
-                style={{ filter: 'grayscale(20%) contrast(1.1)' }}
+                style={{ 
+                  filter: 'grayscale(20%) contrast(1.1)',
+                  transform: 'rotate(90deg) scale(0.8)' 
+                }}
               />
               <p className="text-xs text-gray-700 text-center mt-2 font-mono">
                 numogram — hand-drawn
