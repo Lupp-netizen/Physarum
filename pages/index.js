@@ -6,7 +6,8 @@ import { useTheme } from './_app';
 const navItems = [
   { href: '/writings', en: 'writings', tp: 'lipu sitelen', pos: 'top-[22%] left-[18%]', rotate: '-2deg' },
   { href: '/ramblings', en: 'ramblings', tp: 'toki nasa', pos: 'top-[32%] right-[22%]', rotate: '1deg' },
-  { href: '/recipes', en: 'recipes', tp: 'nasin moku', pos: 'top-[38%] left-[12%]', rotate: '1deg' },
+  { href: '/proto-thoughts', en: 'proto-thoughts', tp: 'open pilin', pos: 'top-[42%] left-[16%]', rotate: '-1deg', smaller: true },
+  { href: '/recipes', en: 'recipes', tp: 'nasin moku', pos: 'top-[38%] left-[8%]', rotate: '1deg' },
   { href: '/drugs', en: 'drugs', tp: 'moku nasa', pos: 'bottom-[38%] right-[16%]', rotate: '-1deg' },
   { href: '/books', en: 'books', tp: 'lipu', pos: 'top-[18%] right-[28%]', rotate: '2deg' },
   { href: '/music', en: 'music from the Outside', tp: 'kalama tan selo', pos: 'bottom-[22%] right-[28%]', rotate: '-1deg', smaller: true },
