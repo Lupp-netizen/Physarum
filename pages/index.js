@@ -17,33 +17,69 @@ const navItems = [
   { href: '/tonal-musings', en: 'tonal musings', tp: 'kalama', pos: 'bottom-[10%] right-[40%]', rotate: '-1deg' },
 ];
 
-// Messages revealed on successive clicks
+// Color schemes: A is original, B/C/D/E... are new ones
+// Cycling pattern after popup: B, A, C, A, D, A, E, A, ...
+const colorSchemes = [
+  { bg: '#2a2520', text: '#d4c4a8', muted: '#8a7a68' }, // 0: A — original warm dark
+  { bg: '#12182a', text: '#a8c4d4', muted: '#4a6878' }, // 1: B — cool oceanic
+  { bg: '#0d1a0d', text: '#a8c4a0', muted: '#4a684a' }, // 2: C — deep forest
+  { bg: '#1a0d2a', text: '#c4a8d4', muted: '#684a78' }, // 3: D — void purple
+  { bg: '#200d0d', text: '#d4b0a8', muted: '#785040' }, // 4: E — dark maroon
+  { bg: '#1a180a', text: '#d4d0a0', muted: '#7a7040' }, // 5: F — muted gold
+];
+
+// Messages revealed on successive clicks of the title
 const revealMessages = [
   "Physarum polycephalum, an acellular slime mold or myxomycete is an amoeba with diverse cellular forms and broad geographic distribution.",
   "lou: name of the person who puts things here. Also known as Pavrati Jain",
   "help: pls help",
   <>Welcome to louphysarum.help, the digital slimemold of lou!<br />Click on various words to reveal various information if you want! This exists mostly as a <a href="https://logangraves.com/website" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>search query</a>, so please have a really low bar for contacting to talk about anything.</>,
   "...",
-  "@logaems on discord, @pavrati on X, @physarumpavrati on Substack, Pjain on LessWrong",
-  "thanks for spending the past few seconds clicking on this word! highly appreciated.",
+  <>
+    find me elsewhere:{' '}
+    <a href="https://x.com/pavrati" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>X / Twitter</a>
+    {', '}
+    <a href="https://substack.com/@physarumpavrati" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>Substack</a>
+    {', '}
+    <a href="https://www.lesswrong.com/users/pavrati-jain" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>LessWrong</a>
+    {', @logaems on Discord'}
+  </>,
+  "thanks for spending the past few seconds clicking on this word! (clicking more changes the colour scheme)",
 ];
 
 const HomePage = () => {
   const { tokiPonaMode, setTokiPonaMode } = useTheme() || { tokiPonaMode: false, setTokiPonaMode: () => {} };
   const [clickCount, setClickCount] = useState(0);
+  const [colorSchemeIndex, setColorSchemeIndex] = useState(0);
 
-  const bgColor = tokiPonaMode ? '#0a120a' : '#2a2520';
-  const textColor = tokiPonaMode ? '#a8b8a8' : '#d4c4a8';
-  const mutedColor = tokiPonaMode ? '#506850' : '#8a7a68';
+  const scheme = colorSchemes[colorSchemeIndex] || colorSchemes[0];
+  const bgColor = tokiPonaMode ? '#0a120a' : scheme.bg;
+  const textColor = tokiPonaMode ? '#a8b8a8' : scheme.text;
+  const mutedColor = tokiPonaMode ? '#506850' : scheme.muted;
 
   const handleTitleClick = () => {
-    if (clickCount < revealMessages.length) {
-      setClickCount(clickCount + 1);
+    const newCount = clickCount + 1;
+    setClickCount(newCount);
+
+    // After popup sequence ends, cycle color schemes: B, A, C, A, D, A, E, A, F, A, ...
+    if (newCount > revealMessages.length) {
+      const extraClicks = newCount - revealMessages.length;
+      if (extraClicks % 2 === 0) {
+        // Even extra clicks → back to original A
+        setColorSchemeIndex(0);
+      } else {
+        // Odd extra clicks → next new scheme: 1, 2, 3, 4, 5...
+        const nextScheme = Math.ceil(extraClicks / 2);
+        setColorSchemeIndex(nextScheme % colorSchemes.length || 1);
+      }
     }
   };
 
+  // Which message to display (stays on last after popup done)
+  const displayedMessageIndex = Math.min(clickCount, revealMessages.length) - 1;
+
   return (
-    <div className="min-h-screen font-mono relative overflow-hidden" style={{ backgroundColor: bgColor }}>
+    <div className="min-h-screen font-mono relative overflow-hidden" style={{ backgroundColor: bgColor, transition: 'background-color 0.8s ease' }}>
       {/* Background image */}
       <div
         className="fixed inset-0 bg-cover bg-center pointer-events-none"
@@ -74,7 +110,7 @@ const HomePage = () => {
           <h1
             onClick={handleTitleClick}
             className="text-4xl md:text-5xl font-mono cursor-pointer transition-all hover:tracking-wider"
-            style={{ color: textColor }}
+            style={{ color: textColor, transition: 'color 0.8s ease' }}
           >
             {tokiPonaMode ? 'Pisalum' : 'Physarum'}
           </h1>
@@ -84,9 +120,9 @@ const HomePage = () => {
             className={`mt-6 max-w-sm mx-auto text-xs leading-relaxed transition-all duration-500 ${
               clickCount > 0 ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
             }`}
-            style={{ color: mutedColor }}
+            style={{ color: mutedColor, transition: 'color 0.8s ease' }}
           >
-            {clickCount > 0 && revealMessages[clickCount - 1]}
+            {clickCount > 0 && revealMessages[displayedMessageIndex]}
           </div>
         </div>
 
@@ -98,6 +134,7 @@ const HomePage = () => {
               style={{
                 color: mutedColor,
                 transform: `rotate(${item.rotate})`,
+                transition: 'color 0.8s ease',
               }}
             >
               {tokiPonaMode ? item.tp : item.en}
@@ -115,6 +152,7 @@ const HomePage = () => {
             background: 'none',
             border: 'none',
             cursor: 'pointer',
+            transition: 'color 0.8s ease',
           }}
         >
           toki
