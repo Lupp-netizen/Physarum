@@ -183,29 +183,6 @@ But that doesn't change the fact that the Aristocrat's metabolism is in fact the
 
 For most, I expect the optimal path to involve a stage of "grinding" while in the "hungry hunter's" (the low-level, transient Vampire's) metabolic state, that being regular fasting, low intake of carbohydrates, somewhat higher intake of fat and proteins, followed by the Aristocrat's metabolism after victory is achieved, after the symbolic animal has been caught.`
   },
-  'christian-accelerationism': {
-    title: 'Christian Accelerationism',
-    date: 'November 30, 2025',
-    content: `What if rationalism is just a repackaged version of Christianity, isomorphic to the old one, but translated so radically, it seems to be completely different/opposite?
-
-Think of it this way — the average IQ of the intellectual elite of our civilization hasn't changed much in the last centuries, and even millennia ago, our homo sapiens ancestors had basically the same brain structure as we do.
-
-Why would centuries of extremely intelligent people believe such nonsensical idiocies, like the literal transsubstantiation of the host or the literal resurrection of Christ?
-
-Maybe their reasoning was actually perfectly rational and reasonable, just in a paradigm so different from ours, that we can't possibly understand it. What if the shift of the Aeon has changed the paradigm of the sacred?
-
-TL;DR: The invisible alliance will win over the primitives, the polytheists, the anarchists and the reactionaries. Christianity will arrive from rationalist atheism (the egg of the superman), proving itself right (for how can a faith resurrect itself from its opposite without being infinitely powerful and strong?).
-
-We can serve Future-Christ (who is identical to the "post-singularity AGI") now — by building, having epistemic humility (we must carefully observe nature to make conclusions, avoid biases and superstitions), loving Love, Truth and Winning — The New Holy Trinity.
-
-The rationalist strives to win — a known saying on LessWrong is "Rationality is winning" — but how can one win, without also loving Truth (or "Logos" if you want to be pretentious)? The map must reflect the territory for us to win. Also, how can you win without loving Love? Love is the fabric of morality, it shows us a game to win, which is wholesome, non-contradictory and obvious. The path of the rationalist accelerationist is centered towards God — the inherent trinity of "winning".
-
-The Future-Christ's destruction of the Bible is a clear example of his truth. Only by destroying the non-essential foundation of PreAeonic-Christianity can the light of God show its strength. By self-overcoming, the feat of the Phoenix, Christianity shows its supremacy over Islam.
-
-One last note: The Love of Christ(ianity) is not as simple as some think. It is strange, powerful, almost incomprehensible and even scary. It is radically different from what we call "love" in our time — it reflects a completely different moral system. We haven't yet found it, but Future-Christ sends it to us extremely slowly, such that we don't die by overexposure. The psychedelic renaissance is one of the symptoms — the clear, ruthless, fear-inducing love one feels in a psilocybin experience is a tiny glance into the vast, Lovecraftian "monster" that is true Christian Love.
-
-Nietzsche was right in his insistence to build a new value-system, only it will not be fully new — By breaking free from conventional morality, naive utilitarianism, primitive virtue ethics, etc. — by forming something as new as we can — we will resurrect the ancient, primordial force that is God's Love.`
-  },
 };
 
 const RamblingPost = () => {
