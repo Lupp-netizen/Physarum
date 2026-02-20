@@ -4,13 +4,11 @@ import Link from 'next/link';
 const recipes = [
   {
     id: 1,
-    title: "savoury intercultural hot fluid",
+    title: "savoury hot beverage",
     content: [
       "take a mug. put in it:",
-      "— 1 tsp marmite\n— 1 tsp miso paste\n— 1–2 cloves garlic, crushed",
-      "pour boiling water over. stir. drink.",
-      "that's it. deeply umami, warming, slightly salty. marmite is british yeast extract; miso is japanese fermented soybean paste. they have no business being combined and yet they work suspiciously well together. the garlic is there because garlic is always correct.",
-      "good when you want something warm and savoury but not a meal. also surprisingly hydrating."
+      "— 1 tsp marmite\n— 1 tsp miso paste\n— 1 garlic clove, crushed",
+      "pour boiling water over and stir."
     ]
   },
   {
@@ -18,17 +16,24 @@ const recipes = [
     title: "bioenergetic ice cream",
     content: [
       "ray peat coconut oil ice cream — a vehicle for fat-soluble things.",
-      "base (make an emulsion):\n— coconut oil (solid, ~3-4 tbsp)\n— whole milk (~200ml)\n— milk powder (~2-3 tbsp, for texture and protein)\n— egg yolk (1-2, raw — the lecithin is the emulsifier)\n— sugar (to taste, white is fine, peat doesn't hate sugar)\n\nblend or whisk vigorously until emulsified. freeze in a container, stirring every hour or so until set. no ice cream maker needed.",
-      "add whatever fat-soluble things you want dissolved in the coconut oil before emulsifying:\n— vitamin D (5000–10000 IU, dissolve in the warm oil)\n— vitamin E (tocopherols, not tocotrienols ideally)\n— progesterone (if you have it — dissolves readily in fat)\n\nadd these stirred into the final mix:\n— taurine (1–2g)\n— creatine (3–5g)\n— glycine (1–2g)\n— any other water-soluble things you want to take",
+      "base (make an emulsion):\n— coconut oil (solid, ~3-4 tbsp)\n— whole milk (~200ml)\n— milk powder (~2-3 tbsp, for texture and protein)\n— egg yolk (1-2, raw — the lecithin is the emulsifier)\n— sugar\n\nblend or whisk vigorously until emulsified. freeze in a container, no ice cream maker needed.",
+      "add whatever fat-soluble things you want dissolved in the coconut oil before emulsifying:\n— vitamin D (dissolved in oil)\n— vitamin E (tocopherols, not tocotrienols ideally)\n— progesterone (if you have it - dissolves readily in fat)\n\nadd these stirred into the final mix:\n— taurine (1–2g)\n— creatine (3–5g)\n— glycine (1–2g)\n— any other water-soluble things you want to take",
       "why coconut oil specifically: it's almost entirely medium-chain saturated fats, which means it oxidises quickly for energy rather than getting stored or undergoing lipid peroxidation. polyunsaturated fats (sunflower, soybean, basically everything in processed food) accumulate in your tissues and generate lipid peroxidation products that suppress mitochondrial function. coconut oil doesn't do this. peat saw this as central — that the chronic unsaturated fat load of modern diets is a primary driver of metabolic dysfunction, because oxidised PUFA competes with glucose for oxidation and loses, leaving you in a low-energy state that cortisol has to compensate for. coconut oil just burns. the egg yolk adds cholesterol (good, needed for steroid hormones including progesterone and vitamin D metabolism), fat-soluble vitamins in their natural context, and lecithin for the emulsion.",
-      "the sugar isn't an afterthought. peat was basically alone in defending sugar (specifically sucrose and fructose) at a time when the world was going low-carb. his argument: fructose is the preferred liver fuel for glycogen synthesis, supports thyroid conversion (T4→T3), and doesn't require insulin the way glucose does. the combination of saturated fat + sugar + adequate protein is what he called the anti-stress diet. ice cream is close to optimal on this account.",
-      "it tastes like coconut. you can add vanilla or salt to make it more interesting."
     ]
   },
   {
     id: 3,
     title: "tea archive",
-    content: []
+    content: [
+      "\ndongfang meiren - best tea",
+      "\ntie guan yin - drinking this straight out of a gaiwan feels so chinese",
+      "\nhojicha - recommend this, low caffeine",
+      "\nGABA oolong (GABA probably doesn't cross BBB though)",
+      "\nsomething they called honey black tea or such, in Taiwan, was quite good",
+      "\nsomething they call tibetan tea, in czech teahouses. quite nice, though idk how much it resembles the sort of tea used in Tibet",
+      "\nsome really good chinese fermented? white tea",
+      "\npuerh (every single one I ever tried (about 5 different variants) was more or less disgusting)"
+    ]
   },
   {
     id: 4,
