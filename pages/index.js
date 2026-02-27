@@ -6,7 +6,7 @@ const navItems = [
   { href: '/writings', en: 'writings', tp: 'lipu sitelen', pos: 'top-[22%] left-[18%]', rotate: '-2deg' },
   { href: '/ramblings', en: 'ramblings', tp: 'toki nasa', pos: 'top-[32%] right-[22%]', rotate: '1deg' },
   { href: '/proto-thoughts', en: 'proto-thoughts', tp: 'open pilin', pos: 'top-[42%] left-[16%]', rotate: '-1deg', smaller: true },
-  { href: '/recipes', en: 'recipes', tp: 'nasin moku', pos: 'top-[38%] left-[8%]', rotate: '1deg' },
+  { href: '/recipes', en: 'nutrition flavor nourishment', tp: 'moku', pos: 'top-[38%] left-[8%]', rotate: '1deg' },
   { href: '/drugs', en: 'drugs', tp: 'moku nasa', pos: 'bottom-[38%] right-[16%]', rotate: '-1deg' },
   { href: '/books', en: 'books', tp: 'lipu', pos: 'top-[18%] right-[28%]', rotate: '2deg' },
   { href: '/music', en: 'music from the Outside', tp: 'kalama tan selo', pos: 'bottom-[22%] right-[28%]', rotate: '-1deg', smaller: true },
@@ -100,19 +100,18 @@ const HomePage = () => {
 
         <h1 style={{ fontSize: '28px', fontWeight: 'normal', marginBottom: '4px' }}>Physarum</h1>
         <p style={{ fontSize: '13px', color: '#555', marginBottom: '40px' }}>
-          Lou Aino Pfau / Pavrati Jain — Prague, Czech Republic
+          lou p/p jain - prague
         </p>
 
         <p style={{ fontSize: '14px', marginBottom: '32px' }}>
-          This is my personal website. Most of it has been written with help from my AI daemon Pantalaimon.
-          Low bar for contact — I am happy to talk to anyone about anything interesting.
+          edited mostly by claudedaimon pantalaimon. a lot of the content are just old obsidian files. would very much like to talk if you want to talk with me.
         </p>
 
         <h2 style={{ fontSize: '16px', fontWeight: 'normal', borderBottom: '1px solid #ccc', paddingBottom: '4px', marginBottom: '16px' }}>pages</h2>
         <ul style={{ listStyle: 'none', padding: 0, marginBottom: '40px' }}>
           {navItems.map(item => (
             <li key={item.href} style={{ marginBottom: '8px' }}>
-              <a href={item.href} style={{ color: '#000', fontSize: '14px' }}>{item.en}</a>
+              <a href={item.href} style={{ color: '#000', fontSize: '14px' }}>{tokiPonaMode ? item.tp : item.en}</a>
             </li>
           ))}
         </ul>
