@@ -100,8 +100,6 @@ const HomePage = () => {
 
         <h1 style={{ fontSize: '28px', fontWeight: 'normal', marginBottom: '4px' }}>Physarum</h1>
         
-        <img src="/Snímek%20obrazovky%202026-02-27%20215519.png" alt="" className="w-full max-w-md mx-auto mb-6 rounded-lg" style={{ maxWidth: '100%', height: 'auto' }} />
-        
         <p style={{ fontSize: '13px', color: '#555', marginBottom: '40px' }}>
           lou p/p jain - prague
         </p>

@@ -57,6 +57,9 @@ const RecipesPage = () => {
                 &larr; home
               </a>
             </Link>
+            
+            <img src="/Sn%C3%ADmek%20obrazovky%202026-02-27%20215519.png" alt="" className="w-full max-w-lg mx-auto mt-6 rounded-lg" style={{ maxWidth: '100%', height: 'auto' }} />
+            
             <h1 className="text-3xl font-mono mt-8 mb-4" style={{ color: '#c8b8a0' }}>
               recipes
             </h1>
