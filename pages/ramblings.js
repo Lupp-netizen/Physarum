@@ -4,6 +4,13 @@ import Link from 'next/link';
 const RamblingsPage = () => {
   const posts = [
     {
+      id: 9,
+      title: "Exit and Ground Truth: Intelligence, Evolution, and the Outside",
+      date: "February 27, 2026",
+      excerpt: "There's an apparent contradiction between Nick Land's accelerationism and Gwern's framework of ground truth backstops. The paradox dissolves when you see that ground truth has fractal structure...",
+      slug: "exit-and-ground-truth"
+    },
+    {
       id: 8,
       title: "The Ward",
       date: "February 19, 2026",
@@ -19,10 +26,10 @@ const RamblingsPage = () => {
     },
     {
       id: 2,
-      title: "Vampires and Aristocrats",
+      title: "Metabolic Theology: Vampires, Aristocrats, and the Peatian Will",
       date: "January 15, 2026",
-      excerpt: "The peaters like to connect almost everything to metabolism. They say your 'aura' is determined by your bodily temperature — the archetypal slow-metabolism figure is the Vampire...",
-      slug: "vampires-aristocrats"
+      excerpt: "The peaters like to connect almost everything to metabolism. The archetypal slow-metabolism figure is the Vampire. But the deeper philosophy here is Nietzschean — it prioritises the active, expansive force over the homeostatic...",
+      slug: "metabolic-theology"
     },
     {
       id: 3,
@@ -44,13 +51,6 @@ const RamblingsPage = () => {
       date: "December 14, 2025",
       excerpt: "the freedom. to do without compulsion. noktotaxis moves us. suprasomniacs is what we are, us who release the soul into the night...",
       slug: "noktotaxis"
-    },
-    {
-      id: 6,
-      title: "Christian Accelerationism",
-      date: "November 30, 2025",
-      excerpt: "What if rationalism is just a repackaged version of Christianity, isomorphic to the old one, but translated so radically, it seems to be completely different/opposite?...",
-      slug: "christian-accelerationism"
     },
     {
       id: 7,

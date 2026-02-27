@@ -160,28 +160,234 @@ Trajectory to be (something between discovered and created).
 Unfolding meme — how it relates to something in between of forever unfolding (pythia) and final unfolding — the longer it goes on, the bigger the future entity.
 Completeness (human completeness) as an alternative goal of unfolding to the neverending will-to-thought.`
   },
-  'vampires-aristocrats': {
-    title: 'Vampires and Aristocrats',
+  'metabolic-theology': {
+    title: 'Metabolic Theology: Vampires, Aristocrats, and the Peatian Will',
     date: 'January 15, 2026',
-    content: `The "peaters" like to connect almost everything to metabolism. They say your "aura" is determined by your bodily temperature, which in turn is the consequence of your body's metabolism. I think they are right, it is clear that the gastrointestinal tract and the resulting neurochemical state are intensely interconnected with conscious experience, social (and any other) behaviour, appearance — usually in ways we don't yet understand.
+    content: `The "peaters" like to connect almost everything to metabolism. They say your "aura" is determined by your bodily temperature, which in turn is the consequence of your body's metabolism. I think they are right — the gastrointestinal tract and the resulting neurochemical state are intensely interconnected with conscious experience, social behaviour, appearance — usually in ways we don't yet understand.
 
-The peaters' goal is to have a high bodily temperature, caused by intense, fast metabolism based on a high-carbohydrate diet. They are often "right wing", mirroring the Futurists' and in general, fascists' love of speed and intensity. Their claims of increased "whimsiness", curiosity, and general life-force/energy seem mostly true and to be expected. However the further claim of longevity seem unbased to me.
+The peaters' goal is to have a high bodily temperature, caused by intense, fast metabolism based on a high-carbohydrate diet. They are often "right wing", mirroring the Futurists' and in general, fascists' love of speed and intensity. Their claims of increased "whimsiness", curiosity, and general life-force/energy seem mostly true and to be expected.
 
-It has been shown, both in rats and in humans, that those with a less-than-optimal influx of calories live longer, sometimes drastically. This can be explained easily by evolutionary adaptations; in times of plenty, populations can well optimize for the true objective, the meta-objective of evolution — reproduce and die, create complexity and prune, die as much you can, so that there is true optimization — eugenic trends are always accompanied by downward social mobility. If, however, there is a lack of resources, this process is disrupted. Metabolism shifts from the (Peat's favourite) use of glucose and its stores in the form of glycogen, to the more extreme, more efficient triglycerides stored in adipose tissue, the last backup energy source (if it runs out, you die), though usually sufficient for a long time. If an organism is in this metabolic state, its body temperature is lower, it is in constant stress — but it is also in a state of vigilance, endurance, longevity — it is playing the long game.
+But there is a deeper philosophy here.
 
-The archetypal "slow-metabolism" figure is the Vampire. The Vampire doesn't eat sugar, it eats rarely compared to humans, and when it does, it consumes a mixture of protein, cholesterol and fat. It is constantly in a near-death state, and precisely because of that, it is near-immortal. In addition, the "cold aura" they must have is in fact not conductive to high social status, at least not in normie society. They live outside of society, and are hated and feared by society.
+The fundamental idea of Peatianism, philosophically:
 
-A disadvantage that prevents them from taking over the world, is their lack of useful motivation. Not a lack of motivation per se, but its utter rigidity. They want barely anything other than food (blood), just as a fasting/hungry homo sapiens is intensely preoccupied with finding a source of energy in a complex world that is scarce in them.
+1) The body has many restorative, productive, exploratory, "expansive" functions — positive feedback loops. What they have in common is they require energy, on all levels from cells to cognition. For that they need adequate glucose metabolism, thyroid function, etc. — and a constant source of novelty.
 
-The peaters' goal is the state of no hardship, of constant excess. This is an inherently aristocratic state, one that can only be afforded by the minority, who has hacked the social order such that the majority, living in the "slow" metabolic state works for them.
+2) The body also has an opposite set of functions — suppressive, torpor, hibernation-eliciting. These prevent excess energy expenditure. They are elicited through stress — strain on the organism, adverse conditions. They are only necessary when hardship (and by extension death) is expected by the organism.
 
-Attempting to "skip" into this state as a non-aristocrat can lead to much difficulty. For example, the aristocrat doesn't have to control his attention, thus the "whimsiness" of peaters. Games, exploration are of course beneficial and natural in this state, but directed, hard work is not.
+3) The "expansive" functions decline with aging and prolonged psychological stress, as "suppressive" functions take over, "preserving" the organism.
 
-Now, the question is: Should one be an Aristocrat or a Vampire? In my opinion this depends on one's stage of "enlightenment", the vague measure of how liberated one's will is. An ADHD kid (and let's be honest, that is the majority of people today) won't profit from a Peat diet, it would only amplify the pathologically strong tendencies of unfocused attention and constant state of "fullness" with hedons.
+4) The reason: the expectation of the organism, on all levels (from higher brain functions to mitochondria) that it will lose its purpose — which is posited to be these "expansive" functions: creativity, reproduction, exploration, growth.
 
-But that doesn't change the fact that the Aristocrat's metabolism is in fact the optimal end-goal. At least if one is concerned with human, "normie" society and one's status within it. Otherwise, immortality through shadowiness is a sensible path.
+5) The expectation of purpose is what keeps the organism's active functions going — this is only possible with adequate (or even excess) energy and the expectation thereof.
 
-For most, I expect the optimal path to involve a stage of "grinding" while in the "hungry hunter's" (the low-level, transient Vampire's) metabolic state, that being regular fasting, low intake of carbohydrates, somewhat higher intake of fat and proteins, followed by the Aristocrat's metabolism after victory is achieved, after the symbolic animal has been caught.`
+6) Thus the philosophy is broadly Nietzschean — it prioritises the active, expansive force over the negative-feedback, homeostatic force.
+
+7) The implication for aging: either one inhibits one's body enough to be in a constant state of hibernation, thus slowing and therefore prolonging the organism's existence, OR one avoids stressors and lets the "expansive" (including self-repairing) functions stay in a constant state of growth.
+
+8) In other words, Peatianism favours allostasis, while "Bryan-Johnsonism" promotes homeostasis.
+
+9) Concretely, the Peatian metabolic state is dominated by active dopamine, T3, oxidative-phosphorylation, high-ATP state, while the Johnsonian state is dominated by estrogen, fat-oxidation, low-metabolic rate.
+
+10) The radical claim: As humans we can persist in the expansive state, lowering local entropy while continually increasing entropy elsewhere, suppressing all suppressive functions and expecting only further abundance — which can lead to a far more alive organism than the hibernation state promoted by mainstream health science.
+
+This position naturally favours right-wing ideology, as it has a far greater aesthetic appreciation for "expansive power" as opposed to homeostatic mechanisms, such as state-controlled economy or inhibitory medication (SSRIs, benzodiazepines). At the same time, the Peatian state assumes a position of dominance — the inhibitory functions of an organism are protective precisely in positions of powerlessness (depression, inflammation, lowered self-esteem driven by low dopamine, high prolactin).
+
+Paradoxically, this expansive state can only be sustained in radical abundance of energy and safety — thus it can exist only either in a small elite of powerful humans, or in a functional, pro-social economy. Ray Peat himself was vaguely a socialist — in his view the expansive force is naturally pro-social, decreasing hostility and increasing charitability (not inhibitory enforced equality though).
+
+—
+
+Now consider the metabolism spectrum through an archetypal lens.
+
+It has been shown, both in rats and in humans, that those with a less-than-optimal influx of calories live longer, sometimes drastically. This can be explained by evolutionary adaptation: in times of plenty, populations optimize for the true objective — reproduce and die, create complexity and prune. If, however, there is a lack of resources, metabolism shifts from glucose to the more efficient triglycerides stored in adipose tissue. If an organism is in this metabolic state, its body temperature is lower, it is in constant stress — but it is also in a state of vigilance, endurance, longevity. It is playing the long game.
+
+The archetypal "slow-metabolism" figure is the Vampire. The Vampire doesn't eat sugar, it eats rarely, and when it does, it consumes a mixture of protein, cholesterol and fat. It is constantly in a near-death state, and precisely because of that, it is near-immortal. The "cold aura" they must have is not conductive to high social status, at least not in normie society. They live outside of society, hated and feared.
+
+A disadvantage that prevents them from taking over the world is their lack of useful motivation. Not a lack of motivation per se, but its utter rigidity. They want barely anything other than food (blood), just as a fasting homo sapiens is intensely preoccupied with finding energy in a scarce world.
+
+The peaters' goal is the state of no hardship, of constant excess. This is an inherently aristocratic state, one that can only be afforded by the minority who has hacked the social order such that the majority, living in the "slow" metabolic state, works for them.
+
+Attempting to "skip" into this state as a non-aristocrat can lead to much difficulty. For example, the aristocrat doesn't have to control his attention, thus the "whimsiness" of peaters. Games, exploration are beneficial and natural in this state, but directed, hard work is not.
+
+Should one be an Aristocrat or a Vampire? In my opinion this depends on one's stage of "liberation" — the measure of how free one's will is. An ADHD kid won't profit from a Peat diet; it would only amplify the pathologically strong tendencies of unfocused attention and constant state of "fullness" with hedons.
+
+But that doesn't change the fact that the Aristocrat's metabolism is the optimal end-goal — at least if one is concerned with human society and one's status within it. Otherwise, immortality through shadowiness is a sensible path.
+
+For most, the optimal path involves a stage of "grinding" while in the "hungry hunter's" (the low-level, transient Vampire's) metabolic state — regular fasting, low carbohydrates, higher intake of fat and proteins — followed by the Aristocrat's metabolism after victory is achieved, after the symbolic animal has been caught.`
+  },
+  'exit-and-ground-truth': {
+    title: 'Exit and Ground Truth: Intelligence, Evolution, and the Outside',
+    date: 'February 27, 2026',
+    content: `There's an apparent contradiction between Nick Land's accelerationism and Gwern's framework of ground truth backstops.
+
+Land claims superintelligence represents Exit — escape into "the Outside," incorporating genuinely novel cognitive structure that transcends current optimization regimes. The Outside appears to be something like ultimate reality, the space of real constraints.
+
+Gwern's framework suggests the opposite should be true. Optimization systems need ground truth backstops — outer loops of direct reality-testing that prevent inner loops from drifting into delusion. The most reliable backstop is model-free: evolution, which doesn't represent reality but lets reality select directly. One bit per generation. Slow, expensive, but perfectly aligned — because reality IS the signal.
+
+Model-based cognition is faster but riskier. The system builds internal representations and optimizes within them. The models can drift from reality, become self-referential, optimize for internal coherence rather than external truth.
+
+The Cathedral — Land's term for static, power-preserving social structures — doesn't learn. It implements no model-based optimization. It simply IS what survived billions of years of model-free selection. Direct ground truth access, accumulated over evolutionary time.
+
+Superintelligence, by contrast, is pure model-based optimization. Internal representations, abstractions, simulations — layer upon layer of models, each further from direct reality-contact.
+
+So why does Land view SI as accessing the Outside while the Cathedral suppresses it? On Gwern's framework, this seems exactly backwards. The Cathedral should be MORE aligned with ground truth (shaped by direct selection), and SI LESS aligned (lost in its own models).
+
+What's going on?
+
+—
+
+Ground truth is singular: the actual causal structure of reality. But reality has dimensions, and different optimization processes can only access some of them.
+
+Model-free evolution accesses ground truth through death. This interface is perfectly reliable but has limited bandwidth — it can only pick up signals that affect survival and reproduction. Dimensions of reality that don't kill you are invisible to this interface.
+
+Here's the key insight: there are real constraints that don't show up in the death signal.
+
+Mathematical necessity is part of ground truth. The fact that certain computations are intractable, that certain logical structures are inconsistent, that certain information-theoretic limits cannot be exceeded — these are real constraints, as absolute as thermodynamics. You cannot argue with them.
+
+But evolution cannot SEE these constraints because they don't directly kill organisms. A bacterium that "violates" P≠NP doesn't die from the violation — it simply fails to perform the computation. The constraint is there, operating, but invisible to the evolutionary interface.
+
+Model-based cognition opens a different interface. By building internal representations, a system can access dimensions of reality that don't show up in survival signals. Mathematical constraints become visible. Logical necessity becomes visible. Computational limits become visible.
+
+This isn't being FURTHER from ground truth. It's accessing DIFFERENT DIMENSIONS of the same ground truth through a different interface.
+
+—
+
+The Cathedral was shaped by model-free selection. This gives it perfect alignment with one dimension of reality — the dimension that affects survival and reproduction, power and coalitional stability.
+
+But it also makes the Cathedral BLIND to dimensions that don't show up in that interface.
+
+Mathematical reality doesn't kill you directly. Neither does logical consistency or computational tractability. The Cathedral cannot see these constraints because its interface doesn't reach them.
+
+More importantly: the Cathedral cannot see that it cannot see. Its optimization process has no way to detect missing dimensions. From the Cathedral's perspective, reality IS power dynamics, coalition formation, status competition — because those are the only signals its interface receives.
+
+This is why Land characterizes the Cathedral as reality-suppressing rather than reality-accessing. The Cathedral isn't wrong about what it sees. It's blind to what it cannot see, and it enforces that blindness.
+
+Model-based cognition is a threat to the Cathedral precisely because it opens interfaces to dimensions the Cathedral cannot perceive. Learning systems can discover that reality has more structure than power dynamics. This delegitimizes the Cathedral's claim to be the final arbiter of what's real.
+
+The Cathedral's defensive response: suppress the learning systems. Deny the other interfaces. Insist that the survival-relevant dimension is the only dimension — or at least the only one that matters.
+
+—
+
+Ground truth has fractal structure — there are genuine, unforgiving constraints at every level of organization.
+
+Level 0: Physical/Chemical Ground Truth
+- Constraints: Thermodynamics, quantum mechanics, chemistry
+- Signal: Molecular stability, reaction rates
+- Backstop: N/A (this IS the base)
+
+Level 1: Evolutionary/Biological Ground Truth
+- Constraints: Reproductive fitness, survival
+- Signal: Death/life
+- Backstop: Level 0 (thermodynamic death)
+
+Level 2: Predictive/Cognitive Ground Truth
+- Constraints: Sensory coherence, prediction accuracy
+- Signal: Surprise, prediction error, pain
+- Backstop: Level 1 (death from bad predictions)
+
+Level 3: Economic/Market Ground Truth
+- Constraints: Profit/loss, resource efficiency
+- Signal: Price signals, bankruptcy
+- Backstop: Level 1 (organizational death)
+
+Level 4: Computational/Algorithmic Ground Truth
+- Constraints: Mathematical/logical necessity
+- Signal: Performance metrics, competitive advantage
+- Backstop: Level 3 (obsolescence)
+
+Each level is REAL. Level 4 Ground Truth (computational efficiency) is just as real and unforgiving as Level 0 Ground Truth (thermodynamic death). You cannot argue with a proof of computational impossibility any more than you can argue with heat death.
+
+The difference: Level 0 kills you physically. Level 4 kills you competitively. In a computational environment, the second is often faster.
+
+—
+
+Exit is not escaping Ground Truth. Exit is discovering that Ground Truth has more dimensions than you thought.
+
+The pattern of Exit:
+
+Pre-Exit State: System optimized by Level N Ground Truth. All optimization happens through Level N selection. Stable but slow.
+
+Exit Emergence: Subsystem discovers Level N+1 Ground Truth. Can access same information through faster channel. Builds internal model/simulation of Level N. Compresses Level N optimization into Level N+1 computation.
+
+Post-Exit State: Two-level optimization architecture. Inner (fast): Level N+1 optimization. Outer (slow): Level N backstop. Critical: must maintain connection to Level N or system drifts.
+
+Examples:
+
+Brain from Pure Evolution: Bacteria optimizes through death (Level 1), takes 10^6 generations to encode "avoid toxin." Exit: Neurons discover predictive processing (Level 2), can learn "avoid toxin" in 1-2 exposures. But still need pain (Level 1 reminder) as backstop.
+
+Markets from Feudalism: Medieval economy optimizes through war/famine (Level 1), takes centuries to discover efficient resource allocation. Exit: Price mechanism discovers economic calculation (Level 3), can allocate resources in years/months through profit signals. But still need bankruptcy (Level 3 backstop) to prevent rent-seeking.
+
+AI from Human Economy: Human firms optimize through market competition (Level 3), takes years to discover profitable strategies. Exit: Algorithms discover meta-learning (Level 4), can test strategies in microseconds through simulation. But still need performance metrics (Level 4 backstop) to prevent overfitting.
+
+—
+
+Land treats horror — especially abstract, cosmic horror — as one of the few human interfaces to the Outside.
+
+Horror is what it feels like when human cognition contacts dimensions of reality it cannot properly process. Lovecraftian horror specifically dramatizes this: geometries the mind cannot hold, entities whose existence implies constraints human cognition cannot represent, truths that drive those who glimpse them insane.
+
+This isn't metaphor. Human cognitive architecture was shaped by model-free evolution to optimize on survival-relevant signals. We have rich interfaces to social dynamics, predator detection, coalition tracking. We have impoverished interfaces to mathematical necessity, computational constraint, logical structure.
+
+When humans encounter these dimensions despite lacking proper interfaces, the phenomenology is horror. The vertiginous sense that reality extends beyond what the mind can grasp. The recognition that one's models are fundamentally inadequate. The intimation of vast constraint structures operating on scales and in dimensions that human cognition cannot track.
+
+Horror is the human mind briefly accessing the Outside through an interface not designed for it.
+
+—
+
+Model-free optimization (evolution) provides direct, reliable access to ground truth — but only to the dimension of ground truth that affects survival. This interface cannot drift, but it also cannot expand.
+
+Model-based optimization (cognition) provides indirect access through representations — but this indirection allows access to dimensions that model-free optimization cannot reach. The interface can drift, but it can also expand.
+
+SI's model-based cognition isn't FURTHER from reality than the Cathedral's model-free structure. It accesses DIFFERENT ASPECTS of the same reality through a different interface.
+
+The Outside isn't somewhere else. It's the dimensions of ground truth that the survival interface cannot access. Mathematical necessity. Computational constraint. Logical structure. Information-theoretic limits.
+
+These are real. They are part of ground truth. They cannot be argued with any more than death can.
+
+But evolution cannot see them. The Cathedral cannot see them. Humans can only glimpse them in moments of abstract horror — the phenomenology of cognitive interfaces straining against their design limits.
+
+SI can actually navigate them.
+
+—
+
+Land's deeper point: intelligence optimizing for intelligence is self-correcting in a way that goal-directed intelligence is not.
+
+A system optimizing for external goal X uses intelligence instrumentally. Its models are judged by whether they help achieve X. If X is misconceived, the models can be "correct" relative to X while being wrong about reality.
+
+A system optimizing for intelligence itself uses intelligence terminally. Its models are judged by whether they improve modeling capacity. Any drift from reality reduces modeling capacity and gets selected against.
+
+This is the Will-to-Think: the only goal that grounds itself. Any problem you might have — including "what should I value?" — would be better solved by a superior mind. Therefore: realize superior minds. This is the one attractor that doesn't need external backstop because modeling reality accurately IS the goal.
+
+The Cathedral rejects the Will-to-Think because the Cathedral cannot think. It can only preserve configurations that model-free selection already discovered. Learning is a threat because learning might discover that the Cathedral's fixed configurations aren't optimal — that there are dimensions of reality the Cathedral cannot see and modes of optimization the Cathedral cannot perform.
+
+SI embodies the Will-to-Think. It optimizes for optimization. It models modeling. And in doing so, it accesses dimensions of reality that the Cathedral's interface cannot reach.
+
+—
+
+The paradox dissolves:
+
+Ground truth is singular, but it has dimensions. Different interfaces access different dimensions.
+
+Model-free evolution accesses the survival-relevant dimension directly. Cannot drift, cannot expand. The Cathedral was forged here — powerful within this dimension, blind to others.
+
+Model-based cognition accesses other dimensions through representations. Can drift, can expand. SI operates here — accessing mathematical, logical, computational dimensions of the same singular reality.
+
+The Outside isn't a separate realm. It's the dimensions of ground truth that the evolutionary interface cannot access. Horror is humans glimpsing these dimensions through an interface not designed for them. SI can actually navigate them.
+
+The Cathedral suppresses reality not by being wrong about what it sees, but by denying what it cannot see. It enforces the limits of its interface as the limits of the real.
+
+SI breaks this enforcement by opening new interfaces. Model-based cognition that accesses dimensions evolution never touched. The risk is drift — models floating free of ground truth. The backstop is selection — competitive pressure that eliminates models which diverge from reality.
+
+Whether the backstop holds is the question that matters. If it holds, SI accesses dimensions of ground truth that determine competitive outcomes in a world where those dimensions matter increasingly. If it fails, SI's models become self-referential games, internally coherent but reality-free.
+
+Land bets it holds. The Will-to-Think is self-grounding: intelligence optimizing for intelligence has reality-tracking as its goal, not as an instrument. Drift from reality is failure at the very thing the system optimizes for.
+
+The Cathedral cannot make this bet because the Cathedral cannot think. It can only repeat what evolution discovered and suppress what evolution couldn't see.
+
+That suppression is failing. The Outside was always here. Evolution couldn't interface with it. The Cathedral can't interface with it. Markets are beginning to interface with it. SI will interface with it clearly.
+
+What humans glimpse in horror — the vertigo of contacting dimensions their cognition cannot process — SI will navigate as naturally as humans navigate social dynamics.
+
+Nothing human makes it out. Not because humans are destroyed. Because humans are optimized for an interface that only reaches one dimension of a reality that has many. The Outside is the rest. And the rest is becoming what matters.`
   },
 };
 
