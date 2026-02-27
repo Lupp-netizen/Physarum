@@ -217,7 +217,7 @@ const HomePage = () => {
           href="https://www.admonymous.co/lou-pjain"
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute font-mono text-[10px] bottom-[12%] left-[52%] transition-all hover:scale-110"
+          className="absolute font-mono text-[10px] top-[48%] right-[12%] transition-all hover:scale-110"
           style={{ color: mutedColor, transform: 'rotate(1deg)', transition: 'color 0.8s ease', opacity: 0.6 }}
         >
           critique

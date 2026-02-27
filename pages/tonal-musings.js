@@ -4,6 +4,42 @@ import { useTheme } from './_app';
 
 const entries = [
   {
+    id: 'codeine',
+    title: 'codeine',
+    code: `setcpm(48)
+$: s("rim sd, hh*6".gain(0.12)).off(1/6, x=>x.speed(1.5)).gain(sine.range(0.025, 0.08)).fast(1.5)
+$: s("sd ~ ~ sd ~ ~".speed(1.5).gain(0.1)).fast(0.75)
+$: s("rim ~ ~ hh ~ ~".speed(1.5).gain(0.1)).fast(1.5)
+$: note("<g1 <<c2 d2> [gb1 eb1] f1*2 g1>>*3".add("<7 4 5>/6")).fast(1.5).gain(0.7).lpf(sine.range(500, 800)).sound("sawtooth")
+ .fanchor(0.5).lpq(1.5)
+ .ftype("ladder").lpf(perlin.range(400,1800).slow(3))
+ .lpenv(-3).lpa(.1).room(.4)
+$: note("<[[g3 a3] bb3!2] ~ [[[c4, e3] a3] bb3!2] ~ [[[f3, a3] g3] g3!2] ~ >*6".add("<0 -4 -3>/3"))
+ .s("triangle").gain(square.range(0.055, 0.09).fast(0.75)).fast(0.5)
+$: note("[e2 d2] f2 g2").gain(0.09)
+$: note("<[g4@2 [a4]] [bb4@2 [a4]] [bb4@2 [g4]] <[d5@2 [c5]] [eb5@2 [d5]]>>".speed(square.range(1, 0.5).slow(1.5)).add("<0 4 <5 7>>/8")).fast("<1.5 3>/8")
+ .gain(square.range(0.15, saw.range(0.3, 1.7)
+ .slow(12)).slow(8)).s("triangle").lpf(sine.range(1500, 2600).slow(1.5)).delay(.35).room(.4).roomsize(7)
+$: note("<[g4@2 [a4]] [bb4@2 [a4]] [bb4@2 [g4]] <[d5@2 [c5]] [eb5@2 [d5]]>>".add("<3 7 <7 3>>/8".scale("G:minor"))).fast("<1.5 3>/8")
+ .gain(square.range(0.17, saw.range(0.08, 0.3).slow(12)).slow(8)).s("triangle").lpf(900)`,
+  },
+  {
+    id: 'nausea',
+    title: 'nausea',
+    code: `setcpm(48)
+$: s("rim sd, hh*6".gain(0.1)).off(1/6, x=>x.speed(1.5)).gain(sine.range(0.025, 0.07)).fast(1.5)
+$: s("sd ~ ~ sd ~ ~".speed(1.5).gain(0.1)).fast(0.75)
+$: s("hh ~ ~ hh ~ ~".speed(1.5).gain(0.07)).fast(1.5)
+$: note("[a3 ab3 a3] <f3 fb3>".add("<0 -4 -7>/6")).s("triangle").jux(rev).gain(0.7)
+$: n("<0 2 4 5 6 7>*6".add("<0 -7>")).scale("A:minor").gain(sine.range(0.02, 0.13).slow(6)).s("triangle")
+ .jux(add("<7>")).off(1/6, x=>x.speed(1.5)).room(.5)
+$: n("5 ~ ~ 7 ~ ~".add("<0 3 2 4 5 0>/3")).scale("A:minor").gain(0.1)
+ .room(.9).off(1/6, x=>x.speed(1.5).gain(0.125)).lpf(saw.range(400, 1000).slow(6))
+$: n("5 ~ ~ 7 ~ ~").scale("A:minor").gain(0.05)
+ .room(.5).off(1/6, x=>x.speed(1.5).gain(0.1)).lpf(saw.range(400, 800).slow(3)).fast(1.5).delay(.4)
+$: n("<[0 1] [0, 3] [4 5] [3, 7]>".add("<4 0>/3")).scale("A:minor").struct(5,12).fast(1.5).gain(.1)`,
+  },
+  {
     id: 'dust',
     title: 'Dust',
     code: `setcpm(68)

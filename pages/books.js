@@ -13,7 +13,6 @@ const BooksPage = () => {
       author: "Douglas Hofstadter",
       year: "1979",
       status: "reading",
-      notes: "On strange loops, self-reference, consciousness, and formal systems. One of those books that rearranges your mind's furniture."
     },
     {
       id: 2,
@@ -21,7 +20,6 @@ const BooksPage = () => {
       author: "Eliezer Yudkowsky",
       year: "2015",
       status: "reading",
-      notes: "Fanfic as philosophy of science. Harry as rationalist protagonist navigating magic systematically. Unreasonably good."
     },
     {
       id: 3,
@@ -29,7 +27,6 @@ const BooksPage = () => {
       author: "Friedrich Nietzsche",
       year: "1883",
       status: "finished",
-      notes: "Nietzsche at his most lyrical. The overman, eternal recurrence, will to power — but as poetry, not argument. Worth reading before the secondary literature."
     },
     {
       id: 4,
@@ -37,7 +34,6 @@ const BooksPage = () => {
       author: "F. William Lawvere & Stephen Schanuel",
       year: "1997",
       status: "reading",
-      notes: "Category theory from first principles, aimed at people without heavy math background. Lawvere's conceptual clarity is remarkable. Working through this."
     },
     {
       id: 5,
@@ -45,7 +41,6 @@ const BooksPage = () => {
       author: "Stephen M. Stahl",
       year: "2013",
       status: "reading",
-      notes: "The canonical clinical psychopharmacology textbook. Beautifully illustrated. I use it constantly for receptor pharmacology and drug mechanisms."
     },
     {
       id: 6,
@@ -53,7 +48,6 @@ const BooksPage = () => {
       author: "Toby Ord",
       year: "2020",
       status: "finished",
-      notes: "The clearest statement of the existential risk case. Less abstract than Bostrom, more empirically grounded. The probability estimates are worth thinking hard about."
     },
     {
       id: 7,
@@ -61,7 +55,6 @@ const BooksPage = () => {
       author: "Richard Bird",
       year: "2014",
       status: "reading",
-      notes: "Rigorous Haskell through mathematical reasoning and equational proofs. Less hand-holding than most Haskell books, more satisfying."
     },
     {
       id: 8,
@@ -69,7 +62,6 @@ const BooksPage = () => {
       author: "Nathan Carter",
       year: "2009",
       status: "want to read",
-      notes: "Group theory via visual intuition before the formalism. Supposed to be unusually good for building geometric understanding."
     },
     {
       id: 9,
@@ -77,7 +69,6 @@ const BooksPage = () => {
       author: "qntm",
       year: "2021",
       status: "finished",
-      notes: "SCP fiction about entities that cannot be remembered. Genuinely epistemically interesting — what does it mean for something to be cognitively invisible? One of the best things I've read."
     },
     {
       id: 10,
@@ -85,7 +76,6 @@ const BooksPage = () => {
       author: "Nick Land",
       year: "2011",
       status: "reading",
-      notes: "Land before and during CCRU. Accelerationism, Deleuze-Guattari-as-weapon, hyperstition, the numogram. Dense and rewarding."
     },
     {
       id: 11,
@@ -93,7 +83,6 @@ const BooksPage = () => {
       author: "CCRU",
       year: "2017",
       status: "reading",
-      notes: "The primary source for Lemurian time war mythology, numogrammatic theory, hyperstition. Somewhere between philosophy, horror fiction, and occult manual."
     },
     {
       id: 12,
@@ -101,7 +90,6 @@ const BooksPage = () => {
       author: "Reza Negarestani",
       year: "2018",
       status: "want to read",
-      notes: "Philosophy of mind as Hegelian project — intelligence as something that makes demands on us, not just a property we have. Reputed to be extremely dense."
     },
     {
       id: 13,
@@ -109,7 +97,6 @@ const BooksPage = () => {
       author: "Martin Heidegger",
       year: "1927",
       status: "want to read",
-      notes: "Dasein, thrownness, being-toward-death. The foundational text of existential phenomenology. I keep deferring this one."
     },
     {
       id: 14,
@@ -117,7 +104,6 @@ const BooksPage = () => {
       author: "G.W.F. Hegel",
       year: "1807",
       status: "want to read",
-      notes: "The dialectical unfolding of consciousness toward Absolute Knowing. Notorious difficulty. On the list."
     },
     {
       id: 15,
@@ -125,7 +111,6 @@ const BooksPage = () => {
       author: "E.T. Jaynes",
       year: "2003",
       status: "want to read",
-      notes: "Bayesian probability as extended logic. Jaynes' Maxent formalism and his critique of frequentism. Essential for anyone thinking carefully about inference."
     },
     {
       id: 16,
@@ -133,7 +118,6 @@ const BooksPage = () => {
       author: "Peter Kropotkin",
       year: "1902",
       status: "want to read",
-      notes: "Kropotkin's counter-argument to social Darwinism — mutual aid, not competition, as the dominant mechanism in evolution. Historically important; also just true."
     },
     {
       id: 17,
@@ -141,7 +125,6 @@ const BooksPage = () => {
       author: "Unknown",
       year: "2024",
       status: "want to read",
-      notes: ""
     },
   ];
 
@@ -186,11 +169,6 @@ const BooksPage = () => {
                 <div className="text-[10px] mt-2 uppercase tracking-wider" style={{ color: statusColors[book.status] }}>
                   {book.status}
                 </div>
-                {book.notes && (
-                  <p className="text-xs text-gray-600 mt-2 italic">
-                    {book.notes}
-                  </p>
-                )}
               </div>
             ))}
           </div>
